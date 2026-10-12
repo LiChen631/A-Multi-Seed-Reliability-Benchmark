@@ -1,0 +1,7 @@
+device: cuda | batch: 128 | warmup_steps: 5000
+algo          rollout update(3 agents)  per-agent upd    full step
+              ms/step        ms/step        ms/step      ms/step
+maddpg           1.08          15.72           5.24        16.80
+matd3            1.08          17.76           5.92        18.85
+muav_mtd3        1.08          20.32           6.77        21.40
+muav_std3        0.84          21.33           7.11        22.16

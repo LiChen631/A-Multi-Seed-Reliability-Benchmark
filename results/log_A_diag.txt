@@ -1,0 +1,17 @@
+results_dir = /root/autodl-tmp/work/results
+algo         seed   form_err     ratio  fe_first   fe_last      pen%
+maddpg         42      152.9       4.1      40.8     199.3      1.8%
+maddpg        123      169.5       4.5      62.6     200.5      0.0%
+matd3          42      104.0       2.8      60.5     111.3      0.8%
+matd3         123      109.6       2.9      64.8     117.8      0.6%
+muav_mtd3      42       95.8       2.5      54.2      97.6      0.0%
+muav_mtd3     123      105.9       2.8      44.2     122.4      0.3%
+muav_std3      42      152.9       4.1      57.3     178.0      0.0%
+muav_std3     123       27.2       0.7      43.5      22.3      0.0%
+saved: /root/autodl-tmp/work/results/interagent_diag.json
+
+结果：/root/autodl-tmp/work/results/interagent_diag.json （把它发回即可）
+判读要点：
+  * frac_steps_with_interagent_pen  ≈ 0  → 机间处罚几乎未触发 ⇒ '避免机间碰撞'在本任务中几乎不是活跃约束
+  * form_err_mean / ideal(37.71)    远大于 1 ⇒ 编队并未被维持（该奖励项未产生编队行为）
+  * centroid_d_first10 -> last10     明显下降 ⇒ 整体在向目标推进；几乎不变 ⇒ 未推进

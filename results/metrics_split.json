@@ -1,0 +1,7790 @@
+{
+ "meta": {
+  "r_obstacle": 25.0,
+  "margin": 20.0,
+  "d_pen": 20.0,
+  "semantics": "separated collision / safety-violation / penalty-trigger statistics",
+  "seeds": [
+   42,
+   123
+  ],
+  "n_episodes": 50,
+  "threshold_m": 120.0
+ },
+ "maddpg_seed42": {
+  "aggregate": {
+   "algo": "maddpg",
+   "seed": 42,
+   "n_episodes": 50,
+   "threshold_m": 120.0,
+   "team_arrival_rate": 0.0,
+   "individual_arrival_rate": 0.33333333333333326,
+   "any_arrival_rate": 1.0,
+   "collision_free_rate": 0.08,
+   "safety_compliant_rate": 0.0,
+   "collision_free_team_success": 0.0,
+   "safety_compliant_team_success": 0.0,
+   "mean_team_final_dist": 317.0363917287191,
+   "mean_true_collisions": 10.4,
+   "mean_safety_violations": 25.46,
+   "mean_penalty_events": 6.66,
+   "mean_min_obstacle_dist": 10.155418649315834
+  },
+  "episodes": [
+   {
+    "ep": 0,
+    "final_dists": [
+     51.03962326049805,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 314.2794329325358,
+    "team_final_min": 51.03962326049805,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 4,
+    "safety_violations": 9,
+    "penalty_events": 0,
+    "min_obstacle_dist": 20.492605209350586,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 1,
+    "final_dists": [
+     57.401283264160156,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 316.39998626708984,
+    "team_final_min": 57.401283264160156,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 16,
+    "safety_violations": 29,
+    "penalty_events": 10,
+    "min_obstacle_dist": 3.5835189819335938,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 2,
+    "final_dists": [
+     50.00973129272461,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 313.93613560994464,
+    "team_final_min": 50.00973129272461,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 10,
+    "safety_violations": 12,
+    "penalty_events": 5,
+    "min_obstacle_dist": 2.976186752319336,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 3,
+    "final_dists": [
+     50.14202880859375,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 313.98023478190106,
+    "team_final_min": 50.14202880859375,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 11,
+    "safety_violations": 12,
+    "penalty_events": 8,
+    "min_obstacle_dist": 3.701155662536621,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 4,
+    "final_dists": [
+     50.011131286621094,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 313.93660227457684,
+    "team_final_min": 50.011131286621094,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 7,
+    "penalty_events": 0,
+    "min_obstacle_dist": 35.673362731933594,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 5,
+    "final_dists": [
+     53.44285202026367,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 315.080509185791,
+    "team_final_min": 53.44285202026367,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 13,
+    "penalty_events": 4,
+    "min_obstacle_dist": 11.301555633544922,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 6,
+    "final_dists": [
+     70.22471618652344,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 320.6744639078776,
+    "team_final_min": 70.22471618652344,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 10,
+    "safety_violations": 26,
+    "penalty_events": 8,
+    "min_obstacle_dist": 3.713700532913208,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 7,
+    "final_dists": [
+     57.56501770019531,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 316.4545644124349,
+    "team_final_min": 57.56501770019531,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 13,
+    "safety_violations": 32,
+    "penalty_events": 9,
+    "min_obstacle_dist": 2.481635570526123,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 8,
+    "final_dists": [
+     52.366859436035156,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 314.72184499104816,
+    "team_final_min": 52.366859436035156,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 20,
+    "safety_violations": 39,
+    "penalty_events": 14,
+    "min_obstacle_dist": 0.3526984751224518,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 9,
+    "final_dists": [
+     61.49296569824219,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 317.7638804117839,
+    "team_final_min": 61.49296569824219,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 14,
+    "safety_violations": 43,
+    "penalty_events": 4,
+    "min_obstacle_dist": 12.728556632995605,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 10,
+    "final_dists": [
+     77.28397369384766,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 323.02754974365234,
+    "team_final_min": 77.28397369384766,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 15,
+    "penalty_events": 1,
+    "min_obstacle_dist": 18.797807693481445,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 11,
+    "final_dists": [
+     53.14017105102539,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 314.97961552937824,
+    "team_final_min": 53.14017105102539,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 26,
+    "penalty_events": 6,
+    "min_obstacle_dist": 3.357931137084961,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 12,
+    "final_dists": [
+     55.4132080078125,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 315.73729451497394,
+    "team_final_min": 55.4132080078125,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 14,
+    "penalty_events": 5,
+    "min_obstacle_dist": 10.92289924621582,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 13,
+    "final_dists": [
+     57.8392448425293,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 316.5459734598796,
+    "team_final_min": 57.8392448425293,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 12,
+    "safety_violations": 40,
+    "penalty_events": 8,
+    "min_obstacle_dist": 11.861658096313477,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 14,
+    "final_dists": [
+     52.53152084350586,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 314.77673212687176,
+    "team_final_min": 52.53152084350586,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 24,
+    "penalty_events": 0,
+    "min_obstacle_dist": 26.461002349853516,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 15,
+    "final_dists": [
+     50.32968521118164,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 314.042786916097,
+    "team_final_min": 50.32968521118164,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 33,
+    "penalty_events": 4,
+    "min_obstacle_dist": 12.889095306396484,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 16,
+    "final_dists": [
+     51.267799377441406,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 314.3554916381836,
+    "team_final_min": 51.267799377441406,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 9,
+    "safety_violations": 21,
+    "penalty_events": 5,
+    "min_obstacle_dist": 15.069389343261719,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 17,
+    "final_dists": [
+     56.737205505371094,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 316.17862701416016,
+    "team_final_min": 56.737205505371094,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 4,
+    "safety_violations": 23,
+    "penalty_events": 2,
+    "min_obstacle_dist": 18.14439582824707,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 18,
+    "final_dists": [
+     83.44578552246094,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 325.08148701985675,
+    "team_final_min": 83.44578552246094,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 31,
+    "safety_violations": 53,
+    "penalty_events": 18,
+    "min_obstacle_dist": 0.6064777374267578,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 19,
+    "final_dists": [
+     50.95204544067383,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 314.25024032592773,
+    "team_final_min": 50.95204544067383,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 17,
+    "safety_violations": 24,
+    "penalty_events": 12,
+    "min_obstacle_dist": 1.1384823322296143,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 20,
+    "final_dists": [
+     50.56841278076172,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 314.1223627726237,
+    "team_final_min": 50.56841278076172,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 10,
+    "safety_violations": 25,
+    "penalty_events": 6,
+    "min_obstacle_dist": 13.054641723632812,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 21,
+    "final_dists": [
+     50.00010299682617,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 313.9329261779785,
+    "team_final_min": 50.00010299682617,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 29,
+    "penalty_events": 4,
+    "min_obstacle_dist": 15.799306869506836,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 22,
+    "final_dists": [
+     50.75541305541992,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 314.18469619750977,
+    "team_final_min": 50.75541305541992,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 4,
+    "safety_violations": 42,
+    "penalty_events": 0,
+    "min_obstacle_dist": 20.03228759765625,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 23,
+    "final_dists": [
+     64.90342712402344,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 318.90070088704425,
+    "team_final_min": 64.90342712402344,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 16,
+    "safety_violations": 31,
+    "penalty_events": 10,
+    "min_obstacle_dist": 1.460142731666565,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 24,
+    "final_dists": [
+     50.004234313964844,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 313.9343032836914,
+    "team_final_min": 50.004234313964844,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 8,
+    "safety_violations": 24,
+    "penalty_events": 4,
+    "min_obstacle_dist": 15.389642715454102,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 25,
+    "final_dists": [
+     59.231605529785156,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 317.01009368896484,
+    "team_final_min": 59.231605529785156,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 6,
+    "penalty_events": 5,
+    "min_obstacle_dist": 7.482226848602295,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 26,
+    "final_dists": [
+     50.10652160644531,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 313.96839904785156,
+    "team_final_min": 50.10652160644531,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 25,
+    "safety_violations": 33,
+    "penalty_events": 17,
+    "min_obstacle_dist": 4.309027194976807,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 27,
+    "final_dists": [
+     65.34580993652344,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 319.04816182454425,
+    "team_final_min": 65.34580993652344,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 5,
+    "safety_violations": 10,
+    "penalty_events": 5,
+    "min_obstacle_dist": 11.436131477355957,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 28,
+    "final_dists": [
+     50.741065979003906,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 314.1799138387044,
+    "team_final_min": 50.741065979003906,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 12,
+    "safety_violations": 49,
+    "penalty_events": 5,
+    "min_obstacle_dist": 10.891629219055176,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 29,
+    "final_dists": [
+     55.41724395751953,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 315.73863983154297,
+    "team_final_min": 55.41724395751953,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 6,
+    "penalty_events": 6,
+    "min_obstacle_dist": 4.204215049743652,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 30,
+    "final_dists": [
+     53.27507400512695,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 315.0245831807454,
+    "team_final_min": 53.27507400512695,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 12,
+    "safety_violations": 20,
+    "penalty_events": 8,
+    "min_obstacle_dist": 10.374513626098633,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 31,
+    "final_dists": [
+     64.70346069335938,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 318.83404541015625,
+    "team_final_min": 64.70346069335938,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 21,
+    "penalty_events": 0,
+    "min_obstacle_dist": 27.851818084716797,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 32,
+    "final_dists": [
+     50.65522766113281,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 314.15130106608075,
+    "team_final_min": 50.65522766113281,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 8,
+    "safety_violations": 15,
+    "penalty_events": 6,
+    "min_obstacle_dist": 4.863388538360596,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 33,
+    "final_dists": [
+     58.145103454589844,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 316.6479263305664,
+    "team_final_min": 58.145103454589844,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 20,
+    "safety_violations": 32,
+    "penalty_events": 14,
+    "min_obstacle_dist": 3.396475076675415,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 34,
+    "final_dists": [
+     65.57487487792969,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 319.124516805013,
+    "team_final_min": 65.57487487792969,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 12,
+    "safety_violations": 21,
+    "penalty_events": 8,
+    "min_obstacle_dist": 11.406024932861328,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 35,
+    "final_dists": [
+     63.106571197509766,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 318.30174891153973,
+    "team_final_min": 63.106571197509766,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 18,
+    "safety_violations": 40,
+    "penalty_events": 10,
+    "min_obstacle_dist": 7.010059356689453,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 36,
+    "final_dists": [
+     84.84260559082031,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 325.5470937093099,
+    "team_final_min": 84.84260559082031,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 13,
+    "safety_violations": 27,
+    "penalty_events": 8,
+    "min_obstacle_dist": 3.957616090774536,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 37,
+    "final_dists": [
+     93.71907806396484,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 328.5059178670247,
+    "team_final_min": 93.71907806396484,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 7,
+    "safety_violations": 30,
+    "penalty_events": 5,
+    "min_obstacle_dist": 7.826552391052246,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 38,
+    "final_dists": [
+     74.03176879882812,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 321.9434814453125,
+    "team_final_min": 74.03176879882812,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 24,
+    "penalty_events": 0,
+    "min_obstacle_dist": 29.339818954467773,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 39,
+    "final_dists": [
+     58.87452697753906,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 316.8910675048828,
+    "team_final_min": 58.87452697753906,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 26,
+    "safety_violations": 39,
+    "penalty_events": 19,
+    "min_obstacle_dist": 1.9027304649353027,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 40,
+    "final_dists": [
+     67.44656372070312,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 319.7484130859375,
+    "team_final_min": 67.44656372070312,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 7,
+    "safety_violations": 27,
+    "penalty_events": 5,
+    "min_obstacle_dist": 4.31366491317749,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 41,
+    "final_dists": [
+     66.1926498413086,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 319.33044179280597,
+    "team_final_min": 66.1926498413086,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 5,
+    "safety_violations": 10,
+    "penalty_events": 3,
+    "min_obstacle_dist": 15.708146095275879,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 42,
+    "final_dists": [
+     52.05784225463867,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 314.618839263916,
+    "team_final_min": 52.05784225463867,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 23,
+    "safety_violations": 43,
+    "penalty_events": 11,
+    "min_obstacle_dist": 7.54818058013916,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 43,
+    "final_dists": [
+     87.8875732421875,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 326.5620829264323,
+    "team_final_min": 87.8875732421875,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 9,
+    "safety_violations": 32,
+    "penalty_events": 4,
+    "min_obstacle_dist": 12.37691879272461,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 44,
+    "final_dists": [
+     70.8532485961914,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 320.8839747111003,
+    "team_final_min": 70.8532485961914,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 13,
+    "safety_violations": 20,
+    "penalty_events": 10,
+    "min_obstacle_dist": 8.501761436462402,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 45,
+    "final_dists": [
+     50.419795989990234,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 314.0728238423665,
+    "team_final_min": 50.419795989990234,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 19,
+    "penalty_events": 6,
+    "min_obstacle_dist": 2.9770400524139404,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 46,
+    "final_dists": [
+     52.17247009277344,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 314.65704854329425,
+    "team_final_min": 52.17247009277344,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 8,
+    "safety_violations": 23,
+    "penalty_events": 6,
+    "min_obstacle_dist": 5.823345184326172,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 47,
+    "final_dists": [
+     50.36832046508789,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 314.05566533406574,
+    "team_final_min": 50.36832046508789,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 15,
+    "safety_violations": 38,
+    "penalty_events": 9,
+    "min_obstacle_dist": 3.1770212650299072,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 48,
+    "final_dists": [
+     50.27581787109375,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 314.0248311360677,
+    "team_final_min": 50.27581787109375,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 7,
+    "safety_violations": 30,
+    "penalty_events": 4,
+    "min_obstacle_dist": 15.670787811279297,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 49,
+    "final_dists": [
+     61.21172332763672,
+     558.0322875976562,
+     333.7663879394531
+    ],
+    "team_final_mean": 317.67013295491535,
+    "team_final_min": 61.21172332763672,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 12,
+    "safety_violations": 12,
+    "penalty_events": 12,
+    "min_obstacle_dist": 3.431702136993408,
+    "collision_free": 0,
+    "safety_compliant": 0
+   }
+  ]
+ },
+ "maddpg_seed123": {
+  "aggregate": {
+   "algo": "maddpg",
+   "seed": 123,
+   "n_episodes": 50,
+   "threshold_m": 120.0,
+   "team_arrival_rate": 0.0,
+   "individual_arrival_rate": 0.32666666666666666,
+   "any_arrival_rate": 0.98,
+   "collision_free_rate": 0.3,
+   "safety_compliant_rate": 0.04,
+   "collision_free_team_success": 0.0,
+   "safety_compliant_team_success": 0.0,
+   "mean_team_final_dist": 241.42273591359455,
+   "mean_true_collisions": 6.34,
+   "mean_safety_violations": 14.4,
+   "mean_penalty_events": 3.92,
+   "mean_min_obstacle_dist": 18.51931227207184
+  },
+  "episodes": [
+   {
+    "ep": 0,
+    "final_dists": [
+     66.08577728271484,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 241.44225311279297,
+    "team_final_min": 66.08577728271484,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 8,
+    "safety_violations": 21,
+    "penalty_events": 4,
+    "min_obstacle_dist": 9.984918594360352,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 1,
+    "final_dists": [
+     74.55859375,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 244.2665252685547,
+    "team_final_min": 74.55859375,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 4,
+    "safety_violations": 17,
+    "penalty_events": 0,
+    "min_obstacle_dist": 20.727928161621094,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 2,
+    "final_dists": [
+     72.65608215332031,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 243.63235473632812,
+    "team_final_min": 72.65608215332031,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 15,
+    "safety_violations": 18,
+    "penalty_events": 10,
+    "min_obstacle_dist": 6.640381813049316,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 3,
+    "final_dists": [
+     92.28137969970703,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 250.1741205851237,
+    "team_final_min": 92.28137969970703,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 10,
+    "penalty_events": 0,
+    "min_obstacle_dist": 36.53303146362305,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 4,
+    "final_dists": [
+     52.652835845947266,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 236.96460596720377,
+    "team_final_min": 52.652835845947266,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 12,
+    "penalty_events": 0,
+    "min_obstacle_dist": 31.607898712158203,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 5,
+    "final_dists": [
+     62.98805236816406,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 240.40967814127603,
+    "team_final_min": 62.98805236816406,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 12,
+    "safety_violations": 12,
+    "penalty_events": 8,
+    "min_obstacle_dist": 1.7143391370773315,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 6,
+    "final_dists": [
+     50.73274230957031,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 236.32457478841147,
+    "team_final_min": 50.73274230957031,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 33,
+    "penalty_events": 0,
+    "min_obstacle_dist": 26.71343231201172,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 7,
+    "final_dists": [
+     50.05662536621094,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 236.09920247395834,
+    "team_final_min": 50.05662536621094,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 22,
+    "safety_violations": 25,
+    "penalty_events": 14,
+    "min_obstacle_dist": 4.489221572875977,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 8,
+    "final_dists": [
+     78.50372314453125,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 245.5815684000651,
+    "team_final_min": 78.50372314453125,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 10,
+    "safety_violations": 13,
+    "penalty_events": 6,
+    "min_obstacle_dist": 16.652324676513672,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 9,
+    "final_dists": [
+     67.2817153930664,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 241.8408991495768,
+    "team_final_min": 67.2817153930664,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 7,
+    "safety_violations": 7,
+    "penalty_events": 5,
+    "min_obstacle_dist": 8.914999008178711,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 10,
+    "final_dists": [
+     80.3323745727539,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 246.1911188761393,
+    "team_final_min": 80.3323745727539,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 5,
+    "safety_violations": 6,
+    "penalty_events": 3,
+    "min_obstacle_dist": 13.79796314239502,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 11,
+    "final_dists": [
+     84.35115051269531,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 247.53071085611978,
+    "team_final_min": 84.35115051269531,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 1,
+    "safety_violations": 25,
+    "penalty_events": 0,
+    "min_obstacle_dist": 24.763202667236328,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 12,
+    "final_dists": [
+     51.38440704345703,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 236.5417963663737,
+    "team_final_min": 51.38440704345703,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 9,
+    "penalty_events": 0,
+    "min_obstacle_dist": 30.049636840820312,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 13,
+    "final_dists": [
+     59.287025451660156,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 239.1760025024414,
+    "team_final_min": 59.287025451660156,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 18,
+    "penalty_events": 4,
+    "min_obstacle_dist": 11.483308792114258,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 14,
+    "final_dists": [
+     53.900516510009766,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 237.38049952189127,
+    "team_final_min": 53.900516510009766,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 16,
+    "penalty_events": 0,
+    "min_obstacle_dist": 38.362850189208984,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 15,
+    "final_dists": [
+     70.2122802734375,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 242.81775410970053,
+    "team_final_min": 70.2122802734375,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 31,
+    "safety_violations": 40,
+    "penalty_events": 18,
+    "min_obstacle_dist": 2.7682976722717285,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 16,
+    "final_dists": [
+     61.96601104736328,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 240.06899770100912,
+    "team_final_min": 61.96601104736328,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 7,
+    "penalty_events": 0,
+    "min_obstacle_dist": 35.23586654663086,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 17,
+    "final_dists": [
+     58.835697174072266,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 239.02555974324545,
+    "team_final_min": 58.835697174072266,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 8,
+    "penalty_events": 0,
+    "min_obstacle_dist": 32.2282600402832,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 18,
+    "final_dists": [
+     51.36186981201172,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 236.53428395589194,
+    "team_final_min": 51.36186981201172,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 6,
+    "penalty_events": 6,
+    "min_obstacle_dist": 4.646694183349609,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 19,
+    "final_dists": [
+     54.41803741455078,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 237.55300649007162,
+    "team_final_min": 54.41803741455078,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 9,
+    "safety_violations": 17,
+    "penalty_events": 5,
+    "min_obstacle_dist": 9.520848274230957,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 20,
+    "final_dists": [
+     50.97502136230469,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 236.40533447265625,
+    "team_final_min": 50.97502136230469,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 9,
+    "penalty_events": 0,
+    "min_obstacle_dist": 26.74894905090332,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 21,
+    "final_dists": [
+     63.41960906982422,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 240.55353037516275,
+    "team_final_min": 63.41960906982422,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 4,
+    "penalty_events": 0,
+    "min_obstacle_dist": 42.5255012512207,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 22,
+    "final_dists": [
+     31.014860153198242,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 229.7519474029541,
+    "team_final_min": 31.014860153198242,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 3,
+    "safety_violations": 19,
+    "penalty_events": 0,
+    "min_obstacle_dist": 22.56173324584961,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 23,
+    "final_dists": [
+     63.59787368774414,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 240.6129519144694,
+    "team_final_min": 63.59787368774414,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 5,
+    "safety_violations": 6,
+    "penalty_events": 3,
+    "min_obstacle_dist": 16.39397621154785,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 24,
+    "final_dists": [
+     113.00347137451172,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 257.0814844767253,
+    "team_final_min": 113.00347137451172,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 23,
+    "penalty_events": 0,
+    "min_obstacle_dist": 25.836776733398438,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 25,
+    "final_dists": [
+     44.17791748046875,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 234.13963317871094,
+    "team_final_min": 44.17791748046875,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 16,
+    "safety_violations": 19,
+    "penalty_events": 6,
+    "min_obstacle_dist": 4.572289943695068,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 26,
+    "final_dists": [
+     85.9908447265625,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 248.07727559407553,
+    "team_final_min": 85.9908447265625,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 10,
+    "safety_violations": 28,
+    "penalty_events": 5,
+    "min_obstacle_dist": 8.55803394317627,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 27,
+    "final_dists": [
+     44.726715087890625,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 234.32256571451822,
+    "team_final_min": 44.726715087890625,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 18,
+    "penalty_events": 5,
+    "min_obstacle_dist": 7.384103298187256,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 28,
+    "final_dists": [
+     60.916969299316406,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 239.7193171183268,
+    "team_final_min": 60.916969299316406,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 10,
+    "safety_violations": 12,
+    "penalty_events": 4,
+    "min_obstacle_dist": 17.01326560974121,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 29,
+    "final_dists": [
+     77.8893814086914,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 245.3767878214518,
+    "team_final_min": 77.8893814086914,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 46.96059036254883,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 30,
+    "final_dists": [
+     50.07883071899414,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 236.1066042582194,
+    "team_final_min": 50.07883071899414,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 53.17524337768555,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 31,
+    "final_dists": [
+     97.89907836914062,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 252.04668680826822,
+    "team_final_min": 97.89907836914062,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 5,
+    "safety_violations": 9,
+    "penalty_events": 3,
+    "min_obstacle_dist": 16.366588592529297,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 32,
+    "final_dists": [
+     50.002288818359375,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 236.08109029134116,
+    "team_final_min": 50.002288818359375,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 12,
+    "safety_violations": 19,
+    "penalty_events": 9,
+    "min_obstacle_dist": 8.341507911682129,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 33,
+    "final_dists": [
+     53.16200256347656,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 237.13432820638022,
+    "team_final_min": 53.16200256347656,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 17,
+    "safety_violations": 25,
+    "penalty_events": 12,
+    "min_obstacle_dist": 9.121561050415039,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 34,
+    "final_dists": [
+     51.13914108276367,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 236.46004104614258,
+    "team_final_min": 51.13914108276367,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 8,
+    "penalty_events": 0,
+    "min_obstacle_dist": 31.493183135986328,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 35,
+    "final_dists": [
+     138.96829223632812,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 265.7364247639974,
+    "team_final_min": 138.96829223632812,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 5,
+    "safety_violations": 6,
+    "penalty_events": 2,
+    "min_obstacle_dist": 18.301054000854492,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 36,
+    "final_dists": [
+     50.81216812133789,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 236.35105005900064,
+    "team_final_min": 50.81216812133789,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 16,
+    "penalty_events": 5,
+    "min_obstacle_dist": 10.799270629882812,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 37,
+    "final_dists": [
+     53.37474060058594,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 237.20524088541666,
+    "team_final_min": 53.37474060058594,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 12,
+    "safety_violations": 17,
+    "penalty_events": 8,
+    "min_obstacle_dist": 3.196934461593628,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 38,
+    "final_dists": [
+     58.169700622558594,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 238.80356089274088,
+    "team_final_min": 58.169700622558594,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 4,
+    "safety_violations": 6,
+    "penalty_events": 0,
+    "min_obstacle_dist": 20.345544815063477,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 39,
+    "final_dists": [
+     97.20370483398438,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 251.8148956298828,
+    "team_final_min": 97.20370483398438,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 2,
+    "safety_violations": 16,
+    "penalty_events": 0,
+    "min_obstacle_dist": 23.747417449951172,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 40,
+    "final_dists": [
+     97.81954956054688,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 252.02017720540366,
+    "team_final_min": 97.81954956054688,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 6,
+    "penalty_events": 0,
+    "min_obstacle_dist": 38.49481201171875,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 41,
+    "final_dists": [
+     110.54192352294922,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 256.2609685262044,
+    "team_final_min": 110.54192352294922,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 12,
+    "penalty_events": 5,
+    "min_obstacle_dist": 9.787930488586426,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 42,
+    "final_dists": [
+     60.498497009277344,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 239.57982635498047,
+    "team_final_min": 60.498497009277344,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 19,
+    "safety_violations": 45,
+    "penalty_events": 17,
+    "min_obstacle_dist": 2.6699631214141846,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 43,
+    "final_dists": [
+     53.5754508972168,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 237.27214431762695,
+    "team_final_min": 53.5754508972168,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 7,
+    "safety_violations": 12,
+    "penalty_events": 6,
+    "min_obstacle_dist": 3.9564902782440186,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 44,
+    "final_dists": [
+     70.75045013427734,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 242.9971440633138,
+    "team_final_min": 70.75045013427734,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 5,
+    "safety_violations": 6,
+    "penalty_events": 4,
+    "min_obstacle_dist": 12.745384216308594,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 45,
+    "final_dists": [
+     52.37715530395508,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 236.8727124532064,
+    "team_final_min": 52.37715530395508,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 6,
+    "penalty_events": 0,
+    "min_obstacle_dist": 38.824466705322266,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 46,
+    "final_dists": [
+     70.46659851074219,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 242.90252685546875,
+    "team_final_min": 70.46659851074219,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 7,
+    "safety_violations": 13,
+    "penalty_events": 5,
+    "min_obstacle_dist": 1.2827028036117554,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 47,
+    "final_dists": [
+     51.14692306518555,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 236.4626350402832,
+    "team_final_min": 51.14692306518555,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 1,
+    "safety_violations": 10,
+    "penalty_events": 0,
+    "min_obstacle_dist": 24.28385353088379,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 48,
+    "final_dists": [
+     51.03857421875,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 236.42651875813803,
+    "team_final_min": 51.03857421875,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 14,
+    "safety_violations": 10,
+    "penalty_events": 10,
+    "min_obstacle_dist": 3.4645841121673584,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 49,
+    "final_dists": [
+     52.77665328979492,
+     481.04052734375,
+     177.20045471191406
+    ],
+    "team_final_mean": 237.00587844848633,
+    "team_final_min": 52.77665328979492,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 9,
+    "safety_violations": 20,
+    "penalty_events": 4,
+    "min_obstacle_dist": 10.176497459411621,
+    "collision_free": 0,
+    "safety_compliant": 0
+   }
+  ]
+ },
+ "matd3_seed42": {
+  "aggregate": {
+   "algo": "matd3",
+   "seed": 42,
+   "n_episodes": 50,
+   "threshold_m": 120.0,
+   "team_arrival_rate": 0.0,
+   "individual_arrival_rate": 0.5733333333333333,
+   "any_arrival_rate": 1.0,
+   "collision_free_rate": 0.14,
+   "safety_compliant_rate": 0.04,
+   "collision_free_team_success": 0.0,
+   "safety_compliant_team_success": 0.0,
+   "mean_team_final_dist": 107.50073775609333,
+   "mean_true_collisions": 9.9,
+   "mean_safety_violations": 21.22,
+   "mean_penalty_events": 6.28,
+   "mean_min_obstacle_dist": 12.833960142731666
+  },
+  "episodes": [
+   {
+    "ep": 0,
+    "final_dists": [
+     57.84557342529297,
+     177.20045471191406,
+     144.674072265625
+    ],
+    "team_final_mean": 126.57336680094402,
+    "team_final_min": 57.84557342529297,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 22,
+    "safety_violations": 33,
+    "penalty_events": 14,
+    "min_obstacle_dist": 5.881994247436523,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 1,
+    "final_dists": [
+     66.34464263916016,
+     177.20045471191406,
+     17.858430862426758
+    ],
+    "team_final_mean": 87.13450940450032,
+    "team_final_min": 17.858430862426758,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 45.31926727294922,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 2,
+    "final_dists": [
+     167.85816955566406,
+     177.20045471191406,
+     18.448589324951172
+    ],
+    "team_final_mean": 121.16907119750977,
+    "team_final_min": 18.448589324951172,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 26,
+    "safety_violations": 29,
+    "penalty_events": 18,
+    "min_obstacle_dist": 2.8062963485717773,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 3,
+    "final_dists": [
+     92.66317749023438,
+     177.20045471191406,
+     98.1371841430664
+    ],
+    "team_final_mean": 122.66693878173828,
+    "team_final_min": 92.66317749023438,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 10,
+    "penalty_events": 0,
+    "min_obstacle_dist": 36.00263977050781,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 4,
+    "final_dists": [
+     46.648075103759766,
+     177.20045471191406,
+     60.86152648925781
+    ],
+    "team_final_mean": 94.90335210164388,
+    "team_final_min": 46.648075103759766,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 7,
+    "safety_violations": 33,
+    "penalty_events": 4,
+    "min_obstacle_dist": 12.146049499511719,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 5,
+    "final_dists": [
+     88.2294921875,
+     177.20045471191406,
+     33.26298141479492
+    ],
+    "team_final_mean": 99.56430943806966,
+    "team_final_min": 33.26298141479492,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 16,
+    "safety_violations": 29,
+    "penalty_events": 10,
+    "min_obstacle_dist": 14.707898139953613,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 6,
+    "final_dists": [
+     74.8380126953125,
+     177.20045471191406,
+     97.46977996826172
+    ],
+    "team_final_mean": 116.50274912516277,
+    "team_final_min": 74.8380126953125,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 16,
+    "safety_violations": 25,
+    "penalty_events": 8,
+    "min_obstacle_dist": 6.545933246612549,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 7,
+    "final_dists": [
+     78.95602416992188,
+     177.20045471191406,
+     47.82831573486328
+    ],
+    "team_final_mean": 101.32826487223308,
+    "team_final_min": 47.82831573486328,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 4,
+    "safety_violations": 15,
+    "penalty_events": 1,
+    "min_obstacle_dist": 19.62531089782715,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 8,
+    "final_dists": [
+     106.40422821044922,
+     177.20045471191406,
+     67.0870361328125
+    ],
+    "team_final_mean": 116.8972396850586,
+    "team_final_min": 67.0870361328125,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 22,
+    "penalty_events": 0,
+    "min_obstacle_dist": 27.99897003173828,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 9,
+    "final_dists": [
+     82.92320251464844,
+     177.20045471191406,
+     99.6140365600586
+    ],
+    "team_final_mean": 119.91256459554036,
+    "team_final_min": 82.92320251464844,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 40,
+    "penalty_events": 0,
+    "min_obstacle_dist": 25.115991592407227,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 10,
+    "final_dists": [
+     60.2363395690918,
+     177.20045471191406,
+     69.89837646484375
+    ],
+    "team_final_mean": 102.4450569152832,
+    "team_final_min": 60.2363395690918,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 4,
+    "safety_violations": 32,
+    "penalty_events": 0,
+    "min_obstacle_dist": 23.609373092651367,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 11,
+    "final_dists": [
+     111.58628845214844,
+     177.20045471191406,
+     74.12535858154297
+    ],
+    "team_final_mean": 120.97070058186848,
+    "team_final_min": 74.12535858154297,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 17,
+    "safety_violations": 18,
+    "penalty_events": 14,
+    "min_obstacle_dist": 4.201747894287109,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 12,
+    "final_dists": [
+     67.35230255126953,
+     177.20045471191406,
+     16.2432804107666
+    ],
+    "team_final_mean": 86.9320125579834,
+    "team_final_min": 16.2432804107666,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 17,
+    "penalty_events": 0,
+    "min_obstacle_dist": 27.94847297668457,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 13,
+    "final_dists": [
+     66.04061126708984,
+     177.20045471191406,
+     20.50577163696289
+    ],
+    "team_final_mean": 87.9156125386556,
+    "team_final_min": 20.50577163696289,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 9,
+    "safety_violations": 22,
+    "penalty_events": 2,
+    "min_obstacle_dist": 18.371828079223633,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 14,
+    "final_dists": [
+     78.8814468383789,
+     177.20045471191406,
+     22.53841781616211
+    ],
+    "team_final_mean": 92.87343978881836,
+    "team_final_min": 22.53841781616211,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 2,
+    "safety_violations": 36,
+    "penalty_events": 0,
+    "min_obstacle_dist": 23.54874038696289,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 15,
+    "final_dists": [
+     60.890743255615234,
+     177.20045471191406,
+     18.210691452026367
+    ],
+    "team_final_mean": 85.43396313985188,
+    "team_final_min": 18.210691452026367,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 13,
+    "safety_violations": 10,
+    "penalty_events": 9,
+    "min_obstacle_dist": 5.496241092681885,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 16,
+    "final_dists": [
+     55.75288772583008,
+     177.20045471191406,
+     64.15542602539062
+    ],
+    "team_final_mean": 99.03625615437825,
+    "team_final_min": 55.75288772583008,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 11,
+    "penalty_events": 5,
+    "min_obstacle_dist": 5.309796333312988,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 17,
+    "final_dists": [
+     68.30106353759766,
+     177.20045471191406,
+     27.58029556274414
+    ],
+    "team_final_mean": 91.02727127075195,
+    "team_final_min": 27.58029556274414,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 15,
+    "penalty_events": 0,
+    "min_obstacle_dist": 20.386808395385742,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 18,
+    "final_dists": [
+     16.450576782226562,
+     177.20045471191406,
+     123.57508087158203
+    ],
+    "team_final_mean": 105.74203745524089,
+    "team_final_min": 16.450576782226562,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 24,
+    "safety_violations": 38,
+    "penalty_events": 19,
+    "min_obstacle_dist": 2.529029607772827,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 19,
+    "final_dists": [
+     94.994384765625,
+     177.20045471191406,
+     59.5775260925293
+    ],
+    "team_final_mean": 110.59078852335612,
+    "team_final_min": 59.5775260925293,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 7,
+    "penalty_events": 4,
+    "min_obstacle_dist": 13.651851654052734,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 20,
+    "final_dists": [
+     140.74703979492188,
+     177.20045471191406,
+     61.35490798950195
+    ],
+    "team_final_mean": 126.43413416544597,
+    "team_final_min": 61.35490798950195,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 18,
+    "safety_violations": 20,
+    "penalty_events": 16,
+    "min_obstacle_dist": 5.084484577178955,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 21,
+    "final_dists": [
+     50.22560501098633,
+     177.20045471191406,
+     139.66073608398438
+    ],
+    "team_final_mean": 122.3622652689616,
+    "team_final_min": 50.22560501098633,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 13,
+    "safety_violations": 25,
+    "penalty_events": 10,
+    "min_obstacle_dist": 3.2367632389068604,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 22,
+    "final_dists": [
+     198.8199462890625,
+     177.20045471191406,
+     20.41974449157715
+    ],
+    "team_final_mean": 132.14671516418457,
+    "team_final_min": 20.41974449157715,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 10,
+    "safety_violations": 30,
+    "penalty_events": 7,
+    "min_obstacle_dist": 5.186626434326172,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 23,
+    "final_dists": [
+     12.2567138671875,
+     177.20045471191406,
+     23.932767868041992
+    ],
+    "team_final_mean": 71.12997881571452,
+    "team_final_min": 12.2567138671875,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 12,
+    "safety_violations": 25,
+    "penalty_events": 5,
+    "min_obstacle_dist": 6.067514896392822,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 24,
+    "final_dists": [
+     102.33238983154297,
+     177.20045471191406,
+     15.941189765930176
+    ],
+    "team_final_mean": 98.49134476979573,
+    "team_final_min": 15.941189765930176,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 49.22857666015625,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 25,
+    "final_dists": [
+     93.65939331054688,
+     177.20045471191406,
+     50.732479095458984
+    ],
+    "team_final_mean": 107.19744237263997,
+    "team_final_min": 50.732479095458984,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 18,
+    "safety_violations": 36,
+    "penalty_events": 13,
+    "min_obstacle_dist": 3.123365640640259,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 26,
+    "final_dists": [
+     93.96815490722656,
+     177.20045471191406,
+     55.41777801513672
+    ],
+    "team_final_mean": 108.86212921142578,
+    "team_final_min": 55.41777801513672,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 12,
+    "safety_violations": 11,
+    "penalty_events": 8,
+    "min_obstacle_dist": 3.8981213569641113,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 27,
+    "final_dists": [
+     85.8125228881836,
+     177.20045471191406,
+     160.02842712402344
+    ],
+    "team_final_mean": 141.01380157470703,
+    "team_final_min": 85.8125228881836,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 13,
+    "penalty_events": 5,
+    "min_obstacle_dist": 10.128036499023438,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 28,
+    "final_dists": [
+     26.67188835144043,
+     177.20045471191406,
+     142.5500030517578
+    ],
+    "team_final_mean": 115.4741153717041,
+    "team_final_min": 26.67188835144043,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 22,
+    "safety_violations": 27,
+    "penalty_events": 13,
+    "min_obstacle_dist": 1.5050054788589478,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 29,
+    "final_dists": [
+     121.57495880126953,
+     177.20045471191406,
+     45.660037994384766
+    ],
+    "team_final_mean": 114.81181716918945,
+    "team_final_min": 45.660037994384766,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 21,
+    "safety_violations": 26,
+    "penalty_events": 11,
+    "min_obstacle_dist": 3.3408446311950684,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 30,
+    "final_dists": [
+     77.8759536743164,
+     177.20045471191406,
+     114.91033172607422
+    ],
+    "team_final_mean": 123.32891337076823,
+    "team_final_min": 77.8759536743164,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 7,
+    "safety_violations": 18,
+    "penalty_events": 5,
+    "min_obstacle_dist": 0.25570109486579895,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 31,
+    "final_dists": [
+     21.528785705566406,
+     177.20045471191406,
+     123.39598083496094
+    ],
+    "team_final_mean": 107.3750737508138,
+    "team_final_min": 21.528785705566406,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 7,
+    "safety_violations": 15,
+    "penalty_events": 5,
+    "min_obstacle_dist": 2.1581671237945557,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 32,
+    "final_dists": [
+     63.58088684082031,
+     177.20045471191406,
+     164.61036682128906
+    ],
+    "team_final_mean": 135.1305694580078,
+    "team_final_min": 63.58088684082031,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 8,
+    "safety_violations": 35,
+    "penalty_events": 4,
+    "min_obstacle_dist": 13.620797157287598,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 33,
+    "final_dists": [
+     76.2634048461914,
+     177.20045471191406,
+     30.291065216064453
+    ],
+    "team_final_mean": 94.58497492472331,
+    "team_final_min": 30.291065216064453,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 13,
+    "safety_violations": 18,
+    "penalty_events": 6,
+    "min_obstacle_dist": 7.788987159729004,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 34,
+    "final_dists": [
+     69.90357971191406,
+     177.20045471191406,
+     23.649133682250977
+    ],
+    "team_final_mean": 90.2510560353597,
+    "team_final_min": 23.649133682250977,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 15,
+    "safety_violations": 20,
+    "penalty_events": 11,
+    "min_obstacle_dist": 4.237245082855225,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 35,
+    "final_dists": [
+     38.78312683105469,
+     177.20045471191406,
+     42.42339324951172
+    ],
+    "team_final_mean": 86.13565826416016,
+    "team_final_min": 38.78312683105469,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 13,
+    "safety_violations": 11,
+    "penalty_events": 9,
+    "min_obstacle_dist": 1.0630303621292114,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 36,
+    "final_dists": [
+     110.8782730102539,
+     177.20045471191406,
+     101.84137725830078
+    ],
+    "team_final_mean": 129.9733683268229,
+    "team_final_min": 101.84137725830078,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 9,
+    "safety_violations": 19,
+    "penalty_events": 3,
+    "min_obstacle_dist": 17.444599151611328,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 37,
+    "final_dists": [
+     89.32563781738281,
+     177.20045471191406,
+     70.26005554199219
+    ],
+    "team_final_mean": 112.26204935709636,
+    "team_final_min": 70.26005554199219,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 14,
+    "safety_violations": 27,
+    "penalty_events": 11,
+    "min_obstacle_dist": 3.3649070262908936,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 38,
+    "final_dists": [
+     50.67567443847656,
+     177.20045471191406,
+     67.20179748535156
+    ],
+    "team_final_mean": 98.35930887858073,
+    "team_final_min": 50.67567443847656,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 21,
+    "penalty_events": 5,
+    "min_obstacle_dist": 13.08975887298584,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 39,
+    "final_dists": [
+     50.387203216552734,
+     177.20045471191406,
+     55.48919677734375
+    ],
+    "team_final_mean": 94.35895156860352,
+    "team_final_min": 50.387203216552734,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 6,
+    "penalty_events": 0,
+    "min_obstacle_dist": 35.9444465637207,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 40,
+    "final_dists": [
+     51.870323181152344,
+     177.20045471191406,
+     54.16886520385742
+    ],
+    "team_final_mean": 94.41321436564128,
+    "team_final_min": 51.870323181152344,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 3,
+    "safety_violations": 30,
+    "penalty_events": 0,
+    "min_obstacle_dist": 23.01154136657715,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 41,
+    "final_dists": [
+     65.93576049804688,
+     177.20045471191406,
+     119.56446838378906
+    ],
+    "team_final_mean": 120.90022786458333,
+    "team_final_min": 65.93576049804688,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 30,
+    "penalty_events": 5,
+    "min_obstacle_dist": 8.023046493530273,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 42,
+    "final_dists": [
+     84.8687744140625,
+     177.20045471191406,
+     46.31055450439453
+    ],
+    "team_final_mean": 102.7932612101237,
+    "team_final_min": 46.31055450439453,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 12,
+    "safety_violations": 12,
+    "penalty_events": 8,
+    "min_obstacle_dist": 11.129003524780273,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 43,
+    "final_dists": [
+     128.76998901367188,
+     177.20045471191406,
+     48.70607376098633
+    ],
+    "team_final_mean": 118.22550582885742,
+    "team_final_min": 48.70607376098633,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 11,
+    "safety_violations": 29,
+    "penalty_events": 6,
+    "min_obstacle_dist": 6.542953968048096,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 44,
+    "final_dists": [
+     55.80942916870117,
+     177.20045471191406,
+     65.47499084472656
+    ],
+    "team_final_mean": 99.4949582417806,
+    "team_final_min": 55.80942916870117,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 11,
+    "safety_violations": 17,
+    "penalty_events": 8,
+    "min_obstacle_dist": 12.80579948425293,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 45,
+    "final_dists": [
+     79.68851470947266,
+     177.20045471191406,
+     168.7054443359375
+    ],
+    "team_final_mean": 141.86480458577475,
+    "team_final_min": 79.68851470947266,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 6,
+    "penalty_events": 4,
+    "min_obstacle_dist": 9.990093231201172,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 46,
+    "final_dists": [
+     19.153345108032227,
+     177.20045471191406,
+     63.630767822265625
+    ],
+    "team_final_mean": 86.66152254740398,
+    "team_final_min": 19.153345108032227,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 17,
+    "safety_violations": 22,
+    "penalty_events": 11,
+    "min_obstacle_dist": 8.622986793518066,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 47,
+    "final_dists": [
+     100.41059875488281,
+     177.20045471191406,
+     43.08899688720703
+    ],
+    "team_final_mean": 106.90001678466797,
+    "team_final_min": 43.08899688720703,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 7,
+    "safety_violations": 12,
+    "penalty_events": 5,
+    "min_obstacle_dist": 5.788026332855225,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 48,
+    "final_dists": [
+     67.34135437011719,
+     177.20045471191406,
+     36.10516357421875
+    ],
+    "team_final_mean": 93.54899088541667,
+    "team_final_min": 36.10516357421875,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 9,
+    "safety_violations": 30,
+    "penalty_events": 3,
+    "min_obstacle_dist": 13.836227416992188,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 49,
+    "final_dists": [
+     125.16600036621094,
+     177.20045471191406,
+     30.427183151245117
+    ],
+    "team_final_mean": 110.93121274312337,
+    "team_final_min": 30.427183151245117,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 11,
+    "safety_violations": 28,
+    "penalty_events": 9,
+    "min_obstacle_dist": 10.9771089553833,
+    "collision_free": 0,
+    "safety_compliant": 0
+   }
+  ]
+ },
+ "matd3_seed123": {
+  "aggregate": {
+   "algo": "matd3",
+   "seed": 123,
+   "n_episodes": 50,
+   "threshold_m": 120.0,
+   "team_arrival_rate": 0.0,
+   "individual_arrival_rate": 0.3066666666666667,
+   "any_arrival_rate": 0.84,
+   "collision_free_rate": 0.08,
+   "safety_compliant_rate": 0.0,
+   "collision_free_team_success": 0.0,
+   "safety_compliant_team_success": 0.0,
+   "mean_team_final_dist": 172.90954928080242,
+   "mean_true_collisions": 12.16,
+   "mean_safety_violations": 30.52,
+   "mean_penalty_events": 7.56,
+   "mean_min_obstacle_dist": 11.244082040786743
+  },
+  "episodes": [
+   {
+    "ep": 0,
+    "final_dists": [
+     254.9509735107422,
+     86.60663604736328,
+     220.3632049560547
+    ],
+    "team_final_mean": 187.30693817138672,
+    "team_final_min": 86.60663604736328,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 30,
+    "safety_violations": 38,
+    "penalty_events": 22,
+    "min_obstacle_dist": 6.061829566955566,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 1,
+    "final_dists": [
+     254.9509735107422,
+     106.40148162841797,
+     120.78880310058594
+    ],
+    "team_final_mean": 160.71375274658203,
+    "team_final_min": 106.40148162841797,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 2,
+    "safety_violations": 9,
+    "penalty_events": 0,
+    "min_obstacle_dist": 24.032997131347656,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 2,
+    "final_dists": [
+     254.9509735107422,
+     83.62590789794922,
+     157.8538818359375
+    ],
+    "team_final_mean": 165.47692108154297,
+    "team_final_min": 83.62590789794922,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 15,
+    "safety_violations": 31,
+    "penalty_events": 8,
+    "min_obstacle_dist": 3.420927047729492,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 3,
+    "final_dists": [
+     254.9509735107422,
+     59.30206298828125,
+     52.73508071899414
+    ],
+    "team_final_mean": 122.32937240600586,
+    "team_final_min": 52.73508071899414,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 33,
+    "safety_violations": 43,
+    "penalty_events": 20,
+    "min_obstacle_dist": 8.363565444946289,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 4,
+    "final_dists": [
+     254.9509735107422,
+     69.36453247070312,
+     170.0676727294922
+    ],
+    "team_final_mean": 164.79439290364584,
+    "team_final_min": 69.36453247070312,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 17,
+    "safety_violations": 47,
+    "penalty_events": 9,
+    "min_obstacle_dist": 3.2537078857421875,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 5,
+    "final_dists": [
+     254.9509735107422,
+     128.16136169433594,
+     177.20045471191406
+    ],
+    "team_final_mean": 186.77092997233072,
+    "team_final_min": 128.16136169433594,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 9,
+    "safety_violations": 25,
+    "penalty_events": 5,
+    "min_obstacle_dist": 13.747644424438477,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 6,
+    "final_dists": [
+     254.9509735107422,
+     80.81925201416016,
+     189.9348602294922
+    ],
+    "team_final_mean": 175.2350285847982,
+    "team_final_min": 80.81925201416016,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 10,
+    "safety_violations": 25,
+    "penalty_events": 7,
+    "min_obstacle_dist": 6.825155735015869,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 7,
+    "final_dists": [
+     254.9509735107422,
+     73.2978515625,
+     128.51882934570312
+    ],
+    "team_final_mean": 152.2558848063151,
+    "team_final_min": 73.2978515625,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 17,
+    "penalty_events": 5,
+    "min_obstacle_dist": 8.267804145812988,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 8,
+    "final_dists": [
+     254.9509735107422,
+     85.6063003540039,
+     222.4255828857422
+    ],
+    "team_final_mean": 187.66095225016275,
+    "team_final_min": 85.6063003540039,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 11,
+    "safety_violations": 12,
+    "penalty_events": 8,
+    "min_obstacle_dist": 3.2285337448120117,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 9,
+    "final_dists": [
+     254.9509735107422,
+     116.42988586425781,
+     173.1090545654297
+    ],
+    "team_final_mean": 181.49663798014322,
+    "team_final_min": 116.42988586425781,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 15,
+    "safety_violations": 28,
+    "penalty_events": 8,
+    "min_obstacle_dist": 6.294035911560059,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 10,
+    "final_dists": [
+     254.9509735107422,
+     128.26300048828125,
+     208.97613525390625
+    ],
+    "team_final_mean": 197.3967030843099,
+    "team_final_min": 128.26300048828125,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 10,
+    "safety_violations": 13,
+    "penalty_events": 5,
+    "min_obstacle_dist": 7.181700706481934,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 11,
+    "final_dists": [
+     254.9509735107422,
+     58.5689811706543,
+     50.68935012817383
+    ],
+    "team_final_mean": 121.40310160319011,
+    "team_final_min": 50.68935012817383,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 11,
+    "safety_violations": 42,
+    "penalty_events": 7,
+    "min_obstacle_dist": 4.535661697387695,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 12,
+    "final_dists": [
+     254.9509735107422,
+     61.32441711425781,
+     182.15341186523438
+    ],
+    "team_final_mean": 166.14293416341147,
+    "team_final_min": 61.32441711425781,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 23,
+    "safety_violations": 58,
+    "penalty_events": 12,
+    "min_obstacle_dist": 7.283653736114502,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 13,
+    "final_dists": [
+     254.9509735107422,
+     60.621883392333984,
+     179.7506103515625
+    ],
+    "team_final_mean": 165.1078224182129,
+    "team_final_min": 60.621883392333984,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 24,
+    "safety_violations": 54,
+    "penalty_events": 7,
+    "min_obstacle_dist": 10.947368621826172,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 14,
+    "final_dists": [
+     254.9509735107422,
+     139.30010986328125,
+     206.22390747070312
+    ],
+    "team_final_mean": 200.15833028157553,
+    "team_final_min": 139.30010986328125,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 12,
+    "safety_violations": 33,
+    "penalty_events": 9,
+    "min_obstacle_dist": 10.039697647094727,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 15,
+    "final_dists": [
+     254.9509735107422,
+     92.46034240722656,
+     177.7020721435547
+    ],
+    "team_final_mean": 175.0377960205078,
+    "team_final_min": 92.46034240722656,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 3,
+    "penalty_events": 0,
+    "min_obstacle_dist": 43.256195068359375,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 16,
+    "final_dists": [
+     254.9509735107422,
+     88.7752914428711,
+     185.2283172607422
+    ],
+    "team_final_mean": 176.3181940714518,
+    "team_final_min": 88.7752914428711,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 5,
+    "penalty_events": 4,
+    "min_obstacle_dist": 15.173484802246094,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 17,
+    "final_dists": [
+     254.9509735107422,
+     131.99229431152344,
+     180.42047119140625
+    ],
+    "team_final_mean": 189.12124633789062,
+    "team_final_min": 131.99229431152344,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 20,
+    "safety_violations": 25,
+    "penalty_events": 16,
+    "min_obstacle_dist": 3.6808247566223145,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 18,
+    "final_dists": [
+     254.9509735107422,
+     128.4317626953125,
+     177.1219482421875
+    ],
+    "team_final_mean": 186.83489481608072,
+    "team_final_min": 128.4317626953125,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 22,
+    "safety_violations": 40,
+    "penalty_events": 17,
+    "min_obstacle_dist": 3.3002614974975586,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 19,
+    "final_dists": [
+     254.9509735107422,
+     80.66241455078125,
+     92.66921997070312
+    ],
+    "team_final_mean": 142.76086934407553,
+    "team_final_min": 80.66241455078125,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 35,
+    "safety_violations": 35,
+    "penalty_events": 27,
+    "min_obstacle_dist": 3.6561896800994873,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 20,
+    "final_dists": [
+     254.9509735107422,
+     80.87129211425781,
+     179.8686981201172
+    ],
+    "team_final_mean": 171.89698791503906,
+    "team_final_min": 80.87129211425781,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 5,
+    "safety_violations": 8,
+    "penalty_events": 2,
+    "min_obstacle_dist": 18.758010864257812,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 21,
+    "final_dists": [
+     254.9509735107422,
+     113.90255737304688,
+     141.2684783935547
+    ],
+    "team_final_mean": 170.0406697591146,
+    "team_final_min": 113.90255737304688,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 6,
+    "penalty_events": 4,
+    "min_obstacle_dist": 9.165543556213379,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 22,
+    "final_dists": [
+     254.9509735107422,
+     102.41898345947266,
+     160.6965789794922
+    ],
+    "team_final_mean": 172.688845316569,
+    "team_final_min": 102.41898345947266,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 5,
+    "safety_violations": 14,
+    "penalty_events": 4,
+    "min_obstacle_dist": 11.749091148376465,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 23,
+    "final_dists": [
+     254.9509735107422,
+     81.85091400146484,
+     171.15908813476562
+    ],
+    "team_final_mean": 169.32032521565756,
+    "team_final_min": 81.85091400146484,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 7,
+    "safety_violations": 43,
+    "penalty_events": 3,
+    "min_obstacle_dist": 15.374435424804688,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 24,
+    "final_dists": [
+     254.9509735107422,
+     52.31764221191406,
+     188.10702514648438
+    ],
+    "team_final_mean": 165.12521362304688,
+    "team_final_min": 52.31764221191406,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 7,
+    "safety_violations": 14,
+    "penalty_events": 5,
+    "min_obstacle_dist": 4.386653900146484,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 25,
+    "final_dists": [
+     254.9509735107422,
+     62.20230484008789,
+     311.1805725097656
+    ],
+    "team_final_mean": 209.4446169535319,
+    "team_final_min": 62.20230484008789,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 10,
+    "penalty_events": 0,
+    "min_obstacle_dist": 29.683168411254883,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 26,
+    "final_dists": [
+     254.9509735107422,
+     50.007022857666016,
+     180.33157348632812
+    ],
+    "team_final_mean": 161.76318995157877,
+    "team_final_min": 50.007022857666016,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 8,
+    "safety_violations": 19,
+    "penalty_events": 3,
+    "min_obstacle_dist": 15.209638595581055,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 27,
+    "final_dists": [
+     254.9509735107422,
+     100.8428726196289,
+     184.0325469970703
+    ],
+    "team_final_mean": 179.94213104248047,
+    "team_final_min": 100.8428726196289,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 7,
+    "safety_violations": 5,
+    "penalty_events": 5,
+    "min_obstacle_dist": 1.8738188743591309,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 28,
+    "final_dists": [
+     254.9509735107422,
+     83.81542205810547,
+     175.73556518554688
+    ],
+    "team_final_mean": 171.5006535847982,
+    "team_final_min": 83.81542205810547,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 15,
+    "safety_violations": 20,
+    "penalty_events": 6,
+    "min_obstacle_dist": 5.930912017822266,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 29,
+    "final_dists": [
+     254.9509735107422,
+     118.23875427246094,
+     209.56521606445312
+    ],
+    "team_final_mean": 194.25164794921875,
+    "team_final_min": 118.23875427246094,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 13,
+    "penalty_events": 0,
+    "min_obstacle_dist": 36.953948974609375,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 30,
+    "final_dists": [
+     254.9509735107422,
+     93.63630676269531,
+     202.32078552246094
+    ],
+    "team_final_mean": 183.63602193196616,
+    "team_final_min": 93.63630676269531,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 12,
+    "safety_violations": 30,
+    "penalty_events": 4,
+    "min_obstacle_dist": 13.009725570678711,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 31,
+    "final_dists": [
+     254.9509735107422,
+     68.11776733398438,
+     161.27987670898438
+    ],
+    "team_final_mean": 161.4495391845703,
+    "team_final_min": 68.11776733398438,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 6,
+    "penalty_events": 4,
+    "min_obstacle_dist": 13.665665626525879,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 32,
+    "final_dists": [
+     254.9509735107422,
+     61.63992691040039,
+     203.99026489257812
+    ],
+    "team_final_mean": 173.52705510457358,
+    "team_final_min": 61.63992691040039,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 11,
+    "penalty_events": 4,
+    "min_obstacle_dist": 9.7702054977417,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 33,
+    "final_dists": [
+     254.9509735107422,
+     53.51778793334961,
+     320.6850280761719
+    ],
+    "team_final_mean": 209.7179298400879,
+    "team_final_min": 53.51778793334961,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 9,
+    "safety_violations": 22,
+    "penalty_events": 5,
+    "min_obstacle_dist": 8.174833297729492,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 34,
+    "final_dists": [
+     254.9509735107422,
+     74.43268585205078,
+     179.3113555908203
+    ],
+    "team_final_mean": 169.56500498453775,
+    "team_final_min": 74.43268585205078,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 12,
+    "safety_violations": 22,
+    "penalty_events": 8,
+    "min_obstacle_dist": 13.765642166137695,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 35,
+    "final_dists": [
+     254.9509735107422,
+     71.63015747070312,
+     171.07846069335938
+    ],
+    "team_final_mean": 165.88653055826822,
+    "team_final_min": 71.63015747070312,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 15,
+    "safety_violations": 50,
+    "penalty_events": 7,
+    "min_obstacle_dist": 10.174223899841309,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 36,
+    "final_dists": [
+     254.9509735107422,
+     105.68413543701172,
+     145.20298767089844
+    ],
+    "team_final_mean": 168.61269887288412,
+    "team_final_min": 105.68413543701172,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 159,
+    "penalty_events": 4,
+    "min_obstacle_dist": 16.32266616821289,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 37,
+    "final_dists": [
+     254.9509735107422,
+     107.24951934814453,
+     149.92417907714844
+    ],
+    "team_final_mean": 170.70822397867838,
+    "team_final_min": 107.24951934814453,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 13,
+    "safety_violations": 27,
+    "penalty_events": 8,
+    "min_obstacle_dist": 4.211248397827148,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 38,
+    "final_dists": [
+     254.9509735107422,
+     134.0023956298828,
+     129.8523712158203
+    ],
+    "team_final_mean": 172.93524678548178,
+    "team_final_min": 129.8523712158203,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 14,
+    "safety_violations": 29,
+    "penalty_events": 8,
+    "min_obstacle_dist": 5.98056173324585,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 39,
+    "final_dists": [
+     254.9509735107422,
+     71.58094787597656,
+     212.8598175048828
+    ],
+    "team_final_mean": 179.79724629720053,
+    "team_final_min": 71.58094787597656,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 17,
+    "safety_violations": 27,
+    "penalty_events": 10,
+    "min_obstacle_dist": 10.736320495605469,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 40,
+    "final_dists": [
+     254.9509735107422,
+     101.54236602783203,
+     177.20045471191406
+    ],
+    "team_final_mean": 177.89793141682944,
+    "team_final_min": 101.54236602783203,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 12,
+    "penalty_events": 4,
+    "min_obstacle_dist": 9.196155548095703,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 41,
+    "final_dists": [
+     254.9509735107422,
+     111.19851684570312,
+     132.1206817626953
+    ],
+    "team_final_mean": 166.09005737304688,
+    "team_final_min": 111.19851684570312,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 14,
+    "safety_violations": 27,
+    "penalty_events": 10,
+    "min_obstacle_dist": 2.530045986175537,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 42,
+    "final_dists": [
+     254.9509735107422,
+     69.12516021728516,
+     244.6147918701172
+    ],
+    "team_final_mean": 189.5636418660482,
+    "team_final_min": 69.12516021728516,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 21,
+    "safety_violations": 25,
+    "penalty_events": 14,
+    "min_obstacle_dist": 3.377481698989868,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 43,
+    "final_dists": [
+     254.9509735107422,
+     106.99105834960938,
+     145.1077423095703
+    ],
+    "team_final_mean": 169.01659138997397,
+    "team_final_min": 106.99105834960938,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 2,
+    "safety_violations": 41,
+    "penalty_events": 0,
+    "min_obstacle_dist": 22.998998641967773,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 44,
+    "final_dists": [
+     254.9509735107422,
+     154.9139862060547,
+     170.29803466796875
+    ],
+    "team_final_mean": 193.38766479492188,
+    "team_final_min": 154.9139862060547,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 17,
+    "safety_violations": 37,
+    "penalty_events": 13,
+    "min_obstacle_dist": 11.93727970123291,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 45,
+    "final_dists": [
+     254.9509735107422,
+     122.01849365234375,
+     158.08615112304688
+    ],
+    "team_final_mean": 178.35187276204428,
+    "team_final_min": 122.01849365234375,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 29,
+    "penalty_events": 0,
+    "min_obstacle_dist": 26.918771743774414,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 46,
+    "final_dists": [
+     254.9509735107422,
+     108.94940948486328,
+     169.11309814453125
+    ],
+    "team_final_mean": 177.67116038004556,
+    "team_final_min": 108.94940948486328,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 10,
+    "safety_violations": 155,
+    "penalty_events": 0,
+    "min_obstacle_dist": 24.343509674072266,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 47,
+    "final_dists": [
+     254.9509735107422,
+     111.1724624633789,
+     55.43767547607422
+    ],
+    "team_final_mean": 140.52037048339844,
+    "team_final_min": 55.43767547607422,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 26,
+    "safety_violations": 53,
+    "penalty_events": 19,
+    "min_obstacle_dist": 2.3011364936828613,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 48,
+    "final_dists": [
+     254.9509735107422,
+     53.350826263427734,
+     136.0688018798828
+    ],
+    "team_final_mean": 148.12353388468424,
+    "team_final_min": 53.350826263427734,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 19,
+    "safety_violations": 17,
+    "penalty_events": 17,
+    "min_obstacle_dist": 4.333306789398193,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 49,
+    "final_dists": [
+     254.9509735107422,
+     99.60063171386719,
+     181.6148681640625
+    ],
+    "team_final_mean": 178.72215779622397,
+    "team_final_min": 99.60063171386719,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 12,
+    "safety_violations": 12,
+    "penalty_events": 11,
+    "min_obstacle_dist": 6.819861888885498,
+    "collision_free": 0,
+    "safety_compliant": 0
+   }
+  ]
+ },
+ "muav_mtd3_seed42": {
+  "aggregate": {
+   "algo": "muav_mtd3",
+   "seed": 42,
+   "n_episodes": 50,
+   "threshold_m": 120.0,
+   "team_arrival_rate": 0.0,
+   "individual_arrival_rate": 0.0,
+   "any_arrival_rate": 0.0,
+   "collision_free_rate": 0.48,
+   "safety_compliant_rate": 0.18,
+   "collision_free_team_success": 0.0,
+   "safety_compliant_team_success": 0.0,
+   "mean_team_final_dist": 405.6773427327473,
+   "mean_true_collisions": 3.68,
+   "mean_safety_violations": 9.28,
+   "mean_penalty_events": 2.2,
+   "mean_min_obstacle_dist": 28.682743268013
+  },
+  "episodes": [
+   {
+    "ep": 0,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 6,
+    "safety_violations": 13,
+    "penalty_events": 5,
+    "min_obstacle_dist": 7.786192893981934,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 1,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 53.341854095458984,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 2,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 53.45308303833008,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 3,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 6,
+    "penalty_events": 0,
+    "min_obstacle_dist": 38.81391525268555,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 4,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 7,
+    "safety_violations": 14,
+    "penalty_events": 5,
+    "min_obstacle_dist": 5.27789306640625,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 5,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 5,
+    "safety_violations": 6,
+    "penalty_events": 3,
+    "min_obstacle_dist": 16.557140350341797,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 6,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 3,
+    "safety_violations": 8,
+    "penalty_events": 0,
+    "min_obstacle_dist": 23.32159423828125,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 7,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 59.10264205932617,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 8,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 5,
+    "safety_violations": 6,
+    "penalty_events": 3,
+    "min_obstacle_dist": 15.23969841003418,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 9,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 9,
+    "penalty_events": 0,
+    "min_obstacle_dist": 32.37251663208008,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 10,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 3,
+    "safety_violations": 14,
+    "penalty_events": 0,
+    "min_obstacle_dist": 22.96623420715332,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 11,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 6,
+    "penalty_events": 0,
+    "min_obstacle_dist": 40.03300476074219,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 12,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 19,
+    "penalty_events": 0,
+    "min_obstacle_dist": 27.670122146606445,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 13,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 4,
+    "penalty_events": 0,
+    "min_obstacle_dist": 42.08863830566406,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 14,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 9,
+    "penalty_events": 0,
+    "min_obstacle_dist": 26.78348159790039,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 15,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 6,
+    "safety_violations": 6,
+    "penalty_events": 6,
+    "min_obstacle_dist": 4.4912214279174805,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 16,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 3,
+    "safety_violations": 7,
+    "penalty_events": 0,
+    "min_obstacle_dist": 22.548954010009766,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 17,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 84.7039566040039,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 18,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 56.57730484008789,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 19,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 45.31904220581055,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 20,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 3,
+    "penalty_events": 0,
+    "min_obstacle_dist": 44.050045013427734,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 21,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 5,
+    "penalty_events": 0,
+    "min_obstacle_dist": 41.12319564819336,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 22,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 16,
+    "penalty_events": 0,
+    "min_obstacle_dist": 28.28555679321289,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 23,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 8,
+    "safety_violations": 14,
+    "penalty_events": 0,
+    "min_obstacle_dist": 20.901586532592773,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 24,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 7,
+    "safety_violations": 10,
+    "penalty_events": 5,
+    "min_obstacle_dist": 7.507490158081055,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 25,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 11,
+    "safety_violations": 18,
+    "penalty_events": 9,
+    "min_obstacle_dist": 2.7590172290802,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 26,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 9,
+    "safety_violations": 14,
+    "penalty_events": 5,
+    "min_obstacle_dist": 7.1895036697387695,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 27,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 9,
+    "safety_violations": 14,
+    "penalty_events": 4,
+    "min_obstacle_dist": 14.219544410705566,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 28,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 5,
+    "safety_violations": 14,
+    "penalty_events": 4,
+    "min_obstacle_dist": 13.651581764221191,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 29,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 12,
+    "safety_violations": 19,
+    "penalty_events": 11,
+    "min_obstacle_dist": 3.4602720737457275,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 30,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 4,
+    "penalty_events": 0,
+    "min_obstacle_dist": 42.40861892700195,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 31,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 3,
+    "safety_violations": 8,
+    "penalty_events": 0,
+    "min_obstacle_dist": 20.343244552612305,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 32,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 8,
+    "penalty_events": 0,
+    "min_obstacle_dist": 32.76731491088867,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 33,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 7,
+    "penalty_events": 0,
+    "min_obstacle_dist": 37.05857849121094,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 34,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 9,
+    "penalty_events": 0,
+    "min_obstacle_dist": 27.363948822021484,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 35,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 63.6711540222168,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 36,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 7,
+    "safety_violations": 17,
+    "penalty_events": 5,
+    "min_obstacle_dist": 2.7387778759002686,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 37,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 88.1952133178711,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 38,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 4,
+    "safety_violations": 6,
+    "penalty_events": 0,
+    "min_obstacle_dist": 21.621410369873047,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 39,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 65.06805419921875,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 40,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 8,
+    "penalty_events": 0,
+    "min_obstacle_dist": 33.68376922607422,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 41,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 4,
+    "safety_violations": 15,
+    "penalty_events": 0,
+    "min_obstacle_dist": 20.83456802368164,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 42,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 6,
+    "safety_violations": 12,
+    "penalty_events": 4,
+    "min_obstacle_dist": 10.529345512390137,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 43,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 1,
+    "penalty_events": 0,
+    "min_obstacle_dist": 44.770164489746094,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 44,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 14,
+    "safety_violations": 20,
+    "penalty_events": 9,
+    "min_obstacle_dist": 6.084156036376953,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 45,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 26,
+    "safety_violations": 22,
+    "penalty_events": 20,
+    "min_obstacle_dist": 1.6614799499511719,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 46,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 4,
+    "safety_violations": 15,
+    "penalty_events": 2,
+    "min_obstacle_dist": 17.434188842773438,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 47,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 6,
+    "safety_violations": 19,
+    "penalty_events": 6,
+    "min_obstacle_dist": 4.350429534912109,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 48,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 5,
+    "safety_violations": 24,
+    "penalty_events": 0,
+    "min_obstacle_dist": 22.722970962524414,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 49,
+    "final_dists": [
+     254.9509735107422,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 405.6773427327474,
+    "team_final_min": 254.9509735107422,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 6,
+    "safety_violations": 15,
+    "penalty_events": 4,
+    "min_obstacle_dist": 9.233491897583008,
+    "collision_free": 0,
+    "safety_compliant": 0
+   }
+  ]
+ },
+ "muav_mtd3_seed123": {
+  "aggregate": {
+   "algo": "muav_mtd3",
+   "seed": 123,
+   "n_episodes": 50,
+   "threshold_m": 120.0,
+   "team_arrival_rate": 0.0,
+   "individual_arrival_rate": 0.0,
+   "any_arrival_rate": 0.0,
+   "collision_free_rate": 0.1,
+   "safety_compliant_rate": 0.06,
+   "collision_free_team_success": 0.0,
+   "safety_compliant_team_success": 0.0,
+   "mean_team_final_dist": 368.24442698160806,
+   "mean_true_collisions": 13.08,
+   "mean_safety_violations": 31.14,
+   "mean_penalty_events": 7.92,
+   "mean_min_obstacle_dist": 14.552799178361893
+  },
+  "episodes": [
+   {
+    "ep": 0,
+    "final_dists": [
+     304.3641052246094,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 373.0570068359375,
+    "team_final_min": 304.3641052246094,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 1,
+    "safety_violations": 10,
+    "penalty_events": 0,
+    "min_obstacle_dist": 24.613502502441406,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 1,
+    "final_dists": [
+     296.7720947265625,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 370.5263366699219,
+    "team_final_min": 296.7720947265625,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 11,
+    "safety_violations": 12,
+    "penalty_events": 8,
+    "min_obstacle_dist": 3.9025073051452637,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 2,
+    "final_dists": [
+     321.79058837890625,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 378.86583455403644,
+    "team_final_min": 321.79058837890625,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 10,
+    "safety_violations": 21,
+    "penalty_events": 7,
+    "min_obstacle_dist": 3.821908950805664,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 3,
+    "final_dists": [
+     304.6853332519531,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 373.16408284505206,
+    "team_final_min": 304.6853332519531,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 7,
+    "safety_violations": 5,
+    "penalty_events": 5,
+    "min_obstacle_dist": 2.9306411743164062,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 4,
+    "final_dists": [
+     267.3259582519531,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 360.71095784505206,
+    "team_final_min": 267.3259582519531,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 7,
+    "safety_violations": 25,
+    "penalty_events": 5,
+    "min_obstacle_dist": 2.423473834991455,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 5,
+    "final_dists": [
+     305.2825622558594,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 373.3631591796875,
+    "team_final_min": 305.2825622558594,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 7,
+    "safety_violations": 17,
+    "penalty_events": 3,
+    "min_obstacle_dist": 17.692033767700195,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 6,
+    "final_dists": [
+     312.8988037109375,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 375.9019063313802,
+    "team_final_min": 312.8988037109375,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 20,
+    "safety_violations": 16,
+    "penalty_events": 14,
+    "min_obstacle_dist": 2.9692254066467285,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 7,
+    "final_dists": [
+     305.5563659667969,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 373.4544270833333,
+    "team_final_min": 305.5563659667969,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 55.381622314453125,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 8,
+    "final_dists": [
+     290.4920959472656,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 368.43300374348956,
+    "team_final_min": 290.4920959472656,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 6,
+    "safety_violations": 19,
+    "penalty_events": 4,
+    "min_obstacle_dist": 11.358726501464844,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 9,
+    "final_dists": [
+     240.8144073486328,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 351.873774210612,
+    "team_final_min": 240.8144073486328,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 47,
+    "safety_violations": 144,
+    "penalty_events": 36,
+    "min_obstacle_dist": 3.8934125900268555,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 10,
+    "final_dists": [
+     300.2868347167969,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 371.6979166666667,
+    "team_final_min": 300.2868347167969,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 9,
+    "safety_violations": 14,
+    "penalty_events": 5,
+    "min_obstacle_dist": 9.018864631652832,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 11,
+    "final_dists": [
+     321.4550476074219,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 378.7539876302083,
+    "team_final_min": 321.4550476074219,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 16,
+    "safety_violations": 23,
+    "penalty_events": 11,
+    "min_obstacle_dist": 11.314208984375,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 12,
+    "final_dists": [
+     305.4407653808594,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 373.4158935546875,
+    "team_final_min": 305.4407653808594,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 6,
+    "safety_violations": 46,
+    "penalty_events": 3,
+    "min_obstacle_dist": 17.731971740722656,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 13,
+    "final_dists": [
+     306.3829040527344,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 373.7299397786458,
+    "team_final_min": 306.3829040527344,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 9,
+    "safety_violations": 12,
+    "penalty_events": 5,
+    "min_obstacle_dist": 15.502544403076172,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 14,
+    "final_dists": [
+     258.5358581542969,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 357.7809244791667,
+    "team_final_min": 258.5358581542969,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 3,
+    "safety_violations": 21,
+    "penalty_events": 0,
+    "min_obstacle_dist": 22.73888397216797,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 15,
+    "final_dists": [
+     306.7776794433594,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 373.8615315755208,
+    "team_final_min": 306.7776794433594,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 16,
+    "safety_violations": 18,
+    "penalty_events": 13,
+    "min_obstacle_dist": 4.5946879386901855,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 16,
+    "final_dists": [
+     309.1172790527344,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 374.6413981119792,
+    "team_final_min": 309.1172790527344,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 11,
+    "safety_violations": 18,
+    "penalty_events": 8,
+    "min_obstacle_dist": 9.030502319335938,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 17,
+    "final_dists": [
+     240.4379425048828,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 351.748285929362,
+    "team_final_min": 240.4379425048828,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 45,
+    "safety_violations": 75,
+    "penalty_events": 37,
+    "min_obstacle_dist": 3.7176570892333984,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 18,
+    "final_dists": [
+     343.3249816894531,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 386.04396565755206,
+    "team_final_min": 333.7663879394531,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 6,
+    "safety_violations": 6,
+    "penalty_events": 5,
+    "min_obstacle_dist": 7.8386406898498535,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 19,
+    "final_dists": [
+     312.18157958984375,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 375.66283162434894,
+    "team_final_min": 312.18157958984375,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 5,
+    "safety_violations": 24,
+    "penalty_events": 1,
+    "min_obstacle_dist": 18.765756607055664,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 20,
+    "final_dists": [
+     283.7085266113281,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 366.17181396484375,
+    "team_final_min": 283.7085266113281,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 15,
+    "safety_violations": 19,
+    "penalty_events": 11,
+    "min_obstacle_dist": 5.9664459228515625,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 21,
+    "final_dists": [
+     303.1855163574219,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 372.6641438802083,
+    "team_final_min": 303.1855163574219,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 13,
+    "safety_violations": 18,
+    "penalty_events": 10,
+    "min_obstacle_dist": 8.243404388427734,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 22,
+    "final_dists": [
+     281.2042541503906,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 365.33705647786456,
+    "team_final_min": 281.2042541503906,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 19,
+    "safety_violations": 50,
+    "penalty_events": 14,
+    "min_obstacle_dist": 0.8247223496437073,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 23,
+    "final_dists": [
+     265.28875732421875,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 360.0318908691406,
+    "team_final_min": 265.28875732421875,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 15,
+    "safety_violations": 32,
+    "penalty_events": 7,
+    "min_obstacle_dist": 4.292197227478027,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 24,
+    "final_dists": [
+     284.3841247558594,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 366.3970133463542,
+    "team_final_min": 284.3841247558594,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 32,
+    "safety_violations": 73,
+    "penalty_events": 25,
+    "min_obstacle_dist": 1.6588027477264404,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 25,
+    "final_dists": [
+     224.2801055908203,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 346.3623402913411,
+    "team_final_min": 224.2801055908203,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 48,
+    "safety_violations": 113,
+    "penalty_events": 4,
+    "min_obstacle_dist": 15.384225845336914,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 26,
+    "final_dists": [
+     306.4150390625,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 373.7406514485677,
+    "team_final_min": 306.4150390625,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 10,
+    "safety_violations": 26,
+    "penalty_events": 5,
+    "min_obstacle_dist": 14.568337440490723,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 27,
+    "final_dists": [
+     292.89459228515625,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 369.2338358561198,
+    "team_final_min": 292.89459228515625,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 8,
+    "safety_violations": 20,
+    "penalty_events": 0,
+    "min_obstacle_dist": 20.035131454467773,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 28,
+    "final_dists": [
+     297.3502502441406,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 370.71905517578125,
+    "team_final_min": 297.3502502441406,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 10,
+    "safety_violations": 27,
+    "penalty_events": 6,
+    "min_obstacle_dist": 6.679564952850342,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 29,
+    "final_dists": [
+     268.2447204589844,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 361.0172119140625,
+    "team_final_min": 268.2447204589844,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 76,
+    "safety_violations": 174,
+    "penalty_events": 36,
+    "min_obstacle_dist": 3.6459193229675293,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 30,
+    "final_dists": [
+     236.635498046875,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 350.4808044433594,
+    "team_final_min": 236.635498046875,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 5,
+    "safety_violations": 98,
+    "penalty_events": 3,
+    "min_obstacle_dist": 16.338226318359375,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 31,
+    "final_dists": [
+     276.0876159667969,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 363.6315104166667,
+    "team_final_min": 276.0876159667969,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 11,
+    "safety_violations": 17,
+    "penalty_events": 8,
+    "min_obstacle_dist": 6.385622978210449,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 32,
+    "final_dists": [
+     311.1380310058594,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 375.3149820963542,
+    "team_final_min": 311.1380310058594,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 6,
+    "safety_violations": 13,
+    "penalty_events": 4,
+    "min_obstacle_dist": 13.085354804992676,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 33,
+    "final_dists": [
+     304.4075927734375,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 373.0715026855469,
+    "team_final_min": 304.4075927734375,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 4,
+    "safety_violations": 12,
+    "penalty_events": 0,
+    "min_obstacle_dist": 20.33584213256836,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 34,
+    "final_dists": [
+     225.56471252441406,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 346.79054260253906,
+    "team_final_min": 225.56471252441406,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 20,
+    "safety_violations": 86,
+    "penalty_events": 12,
+    "min_obstacle_dist": 4.8772382736206055,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 35,
+    "final_dists": [
+     318.41839599609375,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 377.7417704264323,
+    "team_final_min": 318.41839599609375,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 5,
+    "safety_violations": 24,
+    "penalty_events": 0,
+    "min_obstacle_dist": 21.01396369934082,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 36,
+    "final_dists": [
+     305.2583312988281,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 373.35508219401044,
+    "team_final_min": 305.2583312988281,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 6,
+    "safety_violations": 5,
+    "penalty_events": 5,
+    "min_obstacle_dist": 11.50429630279541,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 37,
+    "final_dists": [
+     290.74786376953125,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 368.5182596842448,
+    "team_final_min": 290.74786376953125,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 14,
+    "safety_violations": 27,
+    "penalty_events": 11,
+    "min_obstacle_dist": 3.6745097637176514,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 38,
+    "final_dists": [
+     316.01324462890625,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 376.94005330403644,
+    "team_final_min": 316.01324462890625,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 6,
+    "safety_violations": 16,
+    "penalty_events": 6,
+    "min_obstacle_dist": 3.366903781890869,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 39,
+    "final_dists": [
+     290.7821960449219,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 368.5297037760417,
+    "team_final_min": 290.7821960449219,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 6,
+    "safety_violations": 22,
+    "penalty_events": 4,
+    "min_obstacle_dist": 12.374396324157715,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 40,
+    "final_dists": [
+     277.9994812011719,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 364.268798828125,
+    "team_final_min": 277.9994812011719,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 10,
+    "penalty_events": 0,
+    "min_obstacle_dist": 39.01187515258789,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 41,
+    "final_dists": [
+     285.792236328125,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 366.8663838704427,
+    "team_final_min": 285.792236328125,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 61.843379974365234,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 42,
+    "final_dists": [
+     304.47576904296875,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 373.09422810872394,
+    "team_final_min": 304.47576904296875,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 7,
+    "safety_violations": 14,
+    "penalty_events": 2,
+    "min_obstacle_dist": 18.427358627319336,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 43,
+    "final_dists": [
+     243.59324645996094,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 352.800053914388,
+    "team_final_min": 243.59324645996094,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 6,
+    "safety_violations": 10,
+    "penalty_events": 4,
+    "min_obstacle_dist": 14.232272148132324,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 44,
+    "final_dists": [
+     195.109375,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 336.6387634277344,
+    "team_final_min": 195.109375,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 40,
+    "safety_violations": 63,
+    "penalty_events": 27,
+    "min_obstacle_dist": 2.8510212898254395,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 45,
+    "final_dists": [
+     276.5343017578125,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 363.78040568033856,
+    "team_final_min": 276.5343017578125,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 12,
+    "safety_violations": 19,
+    "penalty_events": 9,
+    "min_obstacle_dist": 4.904029846191406,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 46,
+    "final_dists": [
+     296.82794189453125,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 370.5449523925781,
+    "team_final_min": 296.82794189453125,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 6,
+    "safety_violations": 8,
+    "penalty_events": 4,
+    "min_obstacle_dist": 9.758773803710938,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 47,
+    "final_dists": [
+     365.46319580078125,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 393.4233703613281,
+    "team_final_min": 333.7663879394531,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 92.1148681640625,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 48,
+    "final_dists": [
+     305.6036682128906,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 373.47019449869794,
+    "team_final_min": 305.6036682128906,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 0,
+    "safety_violations": 6,
+    "penalty_events": 0,
+    "min_obstacle_dist": 36.025245666503906,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 49,
+    "final_dists": [
+     308.98651123046875,
+     333.7663879394531,
+     481.04052734375
+    ],
+    "team_final_mean": 374.5978088378906,
+    "team_final_min": 308.98651123046875,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 12,
+    "safety_violations": 29,
+    "penalty_events": 9,
+    "min_obstacle_dist": 4.975255489349365,
+    "collision_free": 0,
+    "safety_compliant": 0
+   }
+  ]
+ },
+ "muav_std3_seed42": {
+  "aggregate": {
+   "algo": "muav_std3",
+   "seed": 42,
+   "n_episodes": 50,
+   "threshold_m": 120.0,
+   "team_arrival_rate": 0.0,
+   "individual_arrival_rate": 0.56,
+   "any_arrival_rate": 0.96,
+   "collision_free_rate": 0.14,
+   "safety_compliant_rate": 0.0,
+   "collision_free_team_success": 0.0,
+   "safety_compliant_team_success": 0.0,
+   "mean_team_final_dist": 217.49348541259766,
+   "mean_true_collisions": 9.04,
+   "mean_safety_violations": 22.46,
+   "mean_penalty_events": 5.56,
+   "mean_min_obstacle_dist": 14.091919481754303
+  },
+  "episodes": [
+   {
+    "ep": 0,
+    "final_dists": [
+     184.27206420898438,
+     44.0079231262207,
+     481.04052734375
+    ],
+    "team_final_mean": 236.4401715596517,
+    "team_final_min": 44.0079231262207,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 8,
+    "safety_violations": 18,
+    "penalty_events": 0,
+    "min_obstacle_dist": 21.484228134155273,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 1,
+    "final_dists": [
+     105.28492736816406,
+     119.77385711669922,
+     481.04052734375
+    ],
+    "team_final_mean": 235.36643727620444,
+    "team_final_min": 105.28492736816406,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 8,
+    "safety_violations": 24,
+    "penalty_events": 4,
+    "min_obstacle_dist": 13.4790678024292,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 2,
+    "final_dists": [
+     56.79442596435547,
+     73.94795989990234,
+     481.04052734375
+    ],
+    "team_final_mean": 203.9276377360026,
+    "team_final_min": 56.79442596435547,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 5,
+    "safety_violations": 15,
+    "penalty_events": 4,
+    "min_obstacle_dist": 14.50345516204834,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 3,
+    "final_dists": [
+     44.52898406982422,
+     67.47516632080078,
+     481.04052734375
+    ],
+    "team_final_mean": 197.68155924479166,
+    "team_final_min": 44.52898406982422,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 10,
+    "safety_violations": 18,
+    "penalty_events": 6,
+    "min_obstacle_dist": 4.347935676574707,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 4,
+    "final_dists": [
+     115.38626098632812,
+     105.5112533569336,
+     481.04052734375
+    ],
+    "team_final_mean": 233.9793472290039,
+    "team_final_min": 105.5112533569336,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 20,
+    "safety_violations": 16,
+    "penalty_events": 15,
+    "min_obstacle_dist": 2.017404317855835,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 5,
+    "final_dists": [
+     65.07825469970703,
+     53.31953430175781,
+     481.04052734375
+    ],
+    "team_final_mean": 199.81277211507162,
+    "team_final_min": 53.31953430175781,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 12,
+    "safety_violations": 38,
+    "penalty_events": 9,
+    "min_obstacle_dist": 6.112674713134766,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 6,
+    "final_dists": [
+     67.10765075683594,
+     50.69375991821289,
+     481.04052734375
+    ],
+    "team_final_mean": 199.6139793395996,
+    "team_final_min": 50.69375991821289,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 2,
+    "safety_violations": 12,
+    "penalty_events": 0,
+    "min_obstacle_dist": 24.785968780517578,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 7,
+    "final_dists": [
+     96.55155944824219,
+     51.816036224365234,
+     481.04052734375
+    ],
+    "team_final_mean": 209.80270767211914,
+    "team_final_min": 51.816036224365234,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 17,
+    "penalty_events": 0,
+    "min_obstacle_dist": 36.61284637451172,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 8,
+    "final_dists": [
+     85.73566436767578,
+     85.43130493164062,
+     481.04052734375
+    ],
+    "team_final_mean": 217.40249888102213,
+    "team_final_min": 85.43130493164062,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 11,
+    "safety_violations": 45,
+    "penalty_events": 9,
+    "min_obstacle_dist": 3.6733038425445557,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 9,
+    "final_dists": [
+     57.13092803955078,
+     64.13771057128906,
+     481.04052734375
+    ],
+    "team_final_mean": 200.76972198486328,
+    "team_final_min": 57.13092803955078,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 5,
+    "safety_violations": 17,
+    "penalty_events": 3,
+    "min_obstacle_dist": 11.683536529541016,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 10,
+    "final_dists": [
+     128.7145233154297,
+     177.20045471191406,
+     481.04052734375
+    ],
+    "team_final_mean": 262.31850179036456,
+    "team_final_min": 128.7145233154297,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 6,
+    "safety_violations": 9,
+    "penalty_events": 6,
+    "min_obstacle_dist": 2.641491174697876,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 11,
+    "final_dists": [
+     86.80216979980469,
+     52.715885162353516,
+     481.04052734375
+    ],
+    "team_final_mean": 206.85286076863608,
+    "team_final_min": 52.715885162353516,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 24,
+    "penalty_events": 0,
+    "min_obstacle_dist": 25.899791717529297,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 12,
+    "final_dists": [
+     61.44501495361328,
+     63.742488861083984,
+     481.04052734375
+    ],
+    "team_final_mean": 202.07601038614908,
+    "team_final_min": 61.44501495361328,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 9,
+    "safety_violations": 35,
+    "penalty_events": 0,
+    "min_obstacle_dist": 20.242969512939453,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 13,
+    "final_dists": [
+     95.68601989746094,
+     57.07571792602539,
+     481.04052734375
+    ],
+    "team_final_mean": 211.2674217224121,
+    "team_final_min": 57.07571792602539,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 2,
+    "safety_violations": 26,
+    "penalty_events": 0,
+    "min_obstacle_dist": 24.549421310424805,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 14,
+    "final_dists": [
+     84.60899353027344,
+     63.09467697143555,
+     481.04052734375
+    ],
+    "team_final_mean": 209.58139928181967,
+    "team_final_min": 63.09467697143555,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 24,
+    "penalty_events": 0,
+    "min_obstacle_dist": 20.9488582611084,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 15,
+    "final_dists": [
+     88.56858825683594,
+     55.79640579223633,
+     481.04052734375
+    ],
+    "team_final_mean": 208.46850713094076,
+    "team_final_min": 55.79640579223633,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 4,
+    "safety_violations": 15,
+    "penalty_events": 2,
+    "min_obstacle_dist": 18.68076515197754,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 16,
+    "final_dists": [
+     153.756591796875,
+     71.36446380615234,
+     481.04052734375
+    ],
+    "team_final_mean": 235.38719431559244,
+    "team_final_min": 71.36446380615234,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 17,
+    "safety_violations": 30,
+    "penalty_events": 11,
+    "min_obstacle_dist": 5.3811516761779785,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 17,
+    "final_dists": [
+     117.55740356445312,
+     50.0208854675293,
+     481.04052734375
+    ],
+    "team_final_mean": 216.20627212524414,
+    "team_final_min": 50.0208854675293,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 10,
+    "safety_violations": 15,
+    "penalty_events": 6,
+    "min_obstacle_dist": 14.366278648376465,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 18,
+    "final_dists": [
+     120.10077667236328,
+     67.1441879272461,
+     481.04052734375
+    ],
+    "team_final_mean": 222.76183064778647,
+    "team_final_min": 67.1441879272461,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 6,
+    "penalty_events": 5,
+    "min_obstacle_dist": 4.18070650100708,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 19,
+    "final_dists": [
+     72.31599426269531,
+     105.30432891845703,
+     481.04052734375
+    ],
+    "team_final_mean": 219.55361684163412,
+    "team_final_min": 72.31599426269531,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 16,
+    "safety_violations": 38,
+    "penalty_events": 9,
+    "min_obstacle_dist": 13.651851654052734,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 20,
+    "final_dists": [
+     96.04853057861328,
+     65.43944549560547,
+     481.04052734375
+    ],
+    "team_final_mean": 214.1761678059896,
+    "team_final_min": 65.43944549560547,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 8,
+    "safety_violations": 20,
+    "penalty_events": 6,
+    "min_obstacle_dist": 15.067177772521973,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 21,
+    "final_dists": [
+     130.9923553466797,
+     82.20491027832031,
+     481.04052734375
+    ],
+    "team_final_mean": 231.41259765625,
+    "team_final_min": 82.20491027832031,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 5,
+    "safety_violations": 6,
+    "penalty_events": 3,
+    "min_obstacle_dist": 14.63608169555664,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 22,
+    "final_dists": [
+     94.21920776367188,
+     55.34385681152344,
+     481.04052734375
+    ],
+    "team_final_mean": 210.2011973063151,
+    "team_final_min": 55.34385681152344,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 10,
+    "penalty_events": 0,
+    "min_obstacle_dist": 39.546173095703125,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 23,
+    "final_dists": [
+     136.16726684570312,
+     136.77786254882812,
+     481.04052734375
+    ],
+    "team_final_mean": 251.32855224609375,
+    "team_final_min": 136.16726684570312,
+    "n_individual_arrived": 0,
+    "team_arrived": 0,
+    "any_arrived": 0,
+    "true_collisions": 13,
+    "safety_violations": 19,
+    "penalty_events": 5,
+    "min_obstacle_dist": 5.974482536315918,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 24,
+    "final_dists": [
+     84.74576568603516,
+     50.74656677246094,
+     481.04052734375
+    ],
+    "team_final_mean": 205.51095326741537,
+    "team_final_min": 50.74656677246094,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 24,
+    "safety_violations": 45,
+    "penalty_events": 18,
+    "min_obstacle_dist": 6.1902313232421875,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 25,
+    "final_dists": [
+     87.90082550048828,
+     55.08878707885742,
+     481.04052734375
+    ],
+    "team_final_mean": 208.0100466410319,
+    "team_final_min": 55.08878707885742,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 25,
+    "penalty_events": 4,
+    "min_obstacle_dist": 6.796838283538818,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 26,
+    "final_dists": [
+     82.72833251953125,
+     44.57672119140625,
+     481.04052734375
+    ],
+    "team_final_mean": 202.7818603515625,
+    "team_final_min": 44.57672119140625,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 5,
+    "safety_violations": 7,
+    "penalty_events": 2,
+    "min_obstacle_dist": 17.96461296081543,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 27,
+    "final_dists": [
+     106.1345443725586,
+     87.6601791381836,
+     481.04052734375
+    ],
+    "team_final_mean": 224.94508361816406,
+    "team_final_min": 87.6601791381836,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 13,
+    "safety_violations": 15,
+    "penalty_events": 9,
+    "min_obstacle_dist": 3.485658884048462,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 28,
+    "final_dists": [
+     168.4260711669922,
+     68.93145751953125,
+     481.04052734375
+    ],
+    "team_final_mean": 239.4660186767578,
+    "team_final_min": 68.93145751953125,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 6,
+    "penalty_events": 6,
+    "min_obstacle_dist": 3.8010847568511963,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 29,
+    "final_dists": [
+     48.65985107421875,
+     95.7430648803711,
+     481.04052734375
+    ],
+    "team_final_mean": 208.48114776611328,
+    "team_final_min": 48.65985107421875,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 5,
+    "safety_violations": 18,
+    "penalty_events": 4,
+    "min_obstacle_dist": 9.661956787109375,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 30,
+    "final_dists": [
+     78.72533416748047,
+     55.999603271484375,
+     481.04052734375
+    ],
+    "team_final_mean": 205.25515492757162,
+    "team_final_min": 55.999603271484375,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 16,
+    "safety_violations": 23,
+    "penalty_events": 15,
+    "min_obstacle_dist": 4.544991493225098,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 31,
+    "final_dists": [
+     110.8565444946289,
+     64.99117279052734,
+     481.04052734375
+    ],
+    "team_final_mean": 218.9627482096354,
+    "team_final_min": 64.99117279052734,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 30,
+    "penalty_events": 0,
+    "min_obstacle_dist": 26.296472549438477,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 32,
+    "final_dists": [
+     83.33605194091797,
+     58.19630813598633,
+     481.04052734375
+    ],
+    "team_final_mean": 207.52429580688477,
+    "team_final_min": 58.19630813598633,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 25,
+    "safety_violations": 28,
+    "penalty_events": 14,
+    "min_obstacle_dist": 9.480986595153809,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 33,
+    "final_dists": [
+     56.91634750366211,
+     89.18525695800781,
+     481.04052734375
+    ],
+    "team_final_mean": 209.0473772684733,
+    "team_final_min": 56.91634750366211,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 2,
+    "safety_violations": 32,
+    "penalty_events": 0,
+    "min_obstacle_dist": 23.254629135131836,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 34,
+    "final_dists": [
+     66.02059173583984,
+     56.80069351196289,
+     481.04052734375
+    ],
+    "team_final_mean": 201.28727086385092,
+    "team_final_min": 56.80069351196289,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 7,
+    "penalty_events": 0,
+    "min_obstacle_dist": 32.399932861328125,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 35,
+    "final_dists": [
+     96.68824768066406,
+     65.49272918701172,
+     481.04052734375
+    ],
+    "team_final_mean": 214.40716807047525,
+    "team_final_min": 65.49272918701172,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 11,
+    "safety_violations": 71,
+    "penalty_events": 9,
+    "min_obstacle_dist": 6.625674724578857,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 36,
+    "final_dists": [
+     95.30396270751953,
+     50.82737731933594,
+     481.04052734375
+    ],
+    "team_final_mean": 209.05728912353516,
+    "team_final_min": 50.82737731933594,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 12,
+    "penalty_events": 4,
+    "min_obstacle_dist": 15.055794715881348,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 37,
+    "final_dists": [
+     114.29601287841797,
+     177.20045471191406,
+     481.04052734375
+    ],
+    "team_final_mean": 257.51233164469403,
+    "team_final_min": 114.29601287841797,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 16,
+    "safety_violations": 17,
+    "penalty_events": 10,
+    "min_obstacle_dist": 8.306429862976074,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 38,
+    "final_dists": [
+     182.71975708007812,
+     29.17772102355957,
+     481.04052734375
+    ],
+    "team_final_mean": 230.97933514912924,
+    "team_final_min": 29.17772102355957,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 18,
+    "safety_violations": 23,
+    "penalty_events": 12,
+    "min_obstacle_dist": 1.9993317127227783,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 39,
+    "final_dists": [
+     103.96331024169922,
+     97.67386627197266,
+     481.04052734375
+    ],
+    "team_final_mean": 227.55923461914062,
+    "team_final_min": 97.67386627197266,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 11,
+    "safety_violations": 33,
+    "penalty_events": 7,
+    "min_obstacle_dist": 9.217761993408203,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 40,
+    "final_dists": [
+     66.63308715820312,
+     53.10120391845703,
+     481.04052734375
+    ],
+    "team_final_mean": 200.25827280680338,
+    "team_final_min": 53.10120391845703,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 13,
+    "safety_violations": 26,
+    "penalty_events": 10,
+    "min_obstacle_dist": 6.13430118560791,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 41,
+    "final_dists": [
+     174.70274353027344,
+     53.49488830566406,
+     481.04052734375
+    ],
+    "team_final_mean": 236.4127197265625,
+    "team_final_min": 53.49488830566406,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 11,
+    "safety_violations": 27,
+    "penalty_events": 8,
+    "min_obstacle_dist": 7.740776538848877,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 42,
+    "final_dists": [
+     76.78169250488281,
+     58.3297233581543,
+     481.04052734375
+    ],
+    "team_final_mean": 205.38398106892905,
+    "team_final_min": 58.3297233581543,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 11,
+    "safety_violations": 20,
+    "penalty_events": 7,
+    "min_obstacle_dist": 13.143362045288086,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 43,
+    "final_dists": [
+     82.46546173095703,
+     71.6689224243164,
+     481.04052734375
+    ],
+    "team_final_mean": 211.72497049967447,
+    "team_final_min": 71.6689224243164,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 8,
+    "penalty_events": 0,
+    "min_obstacle_dist": 40.245033264160156,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 44,
+    "final_dists": [
+     161.16883850097656,
+     52.963558197021484,
+     481.04052734375
+    ],
+    "team_final_mean": 231.72430801391602,
+    "team_final_min": 52.963558197021484,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 11,
+    "safety_violations": 17,
+    "penalty_events": 7,
+    "min_obstacle_dist": 6.76783561706543,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 45,
+    "final_dists": [
+     59.7791633605957,
+     50.149024963378906,
+     481.04052734375
+    ],
+    "team_final_mean": 196.98957188924155,
+    "team_final_min": 50.149024963378906,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 15,
+    "safety_violations": 38,
+    "penalty_events": 7,
+    "min_obstacle_dist": 15.167889595031738,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 46,
+    "final_dists": [
+     88.48995208740234,
+     131.2559814453125,
+     481.04052734375
+    ],
+    "team_final_mean": 233.59548695882162,
+    "team_final_min": 88.48995208740234,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 11,
+    "safety_violations": 21,
+    "penalty_events": 5,
+    "min_obstacle_dist": 10.329590797424316,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 47,
+    "final_dists": [
+     159.8194580078125,
+     71.1685562133789,
+     481.04052734375
+    ],
+    "team_final_mean": 237.3428471883138,
+    "team_final_min": 71.1685562133789,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 22,
+    "safety_violations": 35,
+    "penalty_events": 14,
+    "min_obstacle_dist": 1.7009798288345337,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 48,
+    "final_dists": [
+     123.24058532714844,
+     17.78712272644043,
+     481.04052734375
+    ],
+    "team_final_mean": 207.35607846577963,
+    "team_final_min": 17.78712272644043,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 11,
+    "safety_violations": 36,
+    "penalty_events": 3,
+    "min_obstacle_dist": 16.342370986938477,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 49,
+    "final_dists": [
+     85.39810180664062,
+     53.690635681152344,
+     481.04052734375
+    ],
+    "team_final_mean": 206.70975494384766,
+    "team_final_min": 53.690635681152344,
+    "n_individual_arrived": 2,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 6,
+    "penalty_events": 0,
+    "min_obstacle_dist": 37.47382354736328,
+    "collision_free": 1,
+    "safety_compliant": 0
+   }
+  ]
+ },
+ "muav_std3_seed123": {
+  "aggregate": {
+   "algo": "muav_std3",
+   "seed": 123,
+   "n_episodes": 50,
+   "threshold_m": 120.0,
+   "team_arrival_rate": 0.0,
+   "individual_arrival_rate": 0.33333333333333326,
+   "any_arrival_rate": 1.0,
+   "collision_free_rate": 0.62,
+   "safety_compliant_rate": 0.3,
+   "collision_free_team_success": 0.0,
+   "safety_compliant_team_success": 0.0,
+   "mean_team_final_dist": 336.05099985917406,
+   "mean_true_collisions": 2.28,
+   "mean_safety_violations": 8.4,
+   "mean_penalty_events": 1.36,
+   "mean_min_obstacle_dist": 31.81206332206726
+  },
+  "episodes": [
+   {
+    "ep": 0,
+    "final_dists": [
+     53.8828010559082,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 338.65461858113605,
+    "team_final_min": 53.8828010559082,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 5,
+    "safety_violations": 6,
+    "penalty_events": 3,
+    "min_obstacle_dist": 17.600780487060547,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 1,
+    "final_dists": [
+     72.36486053466797,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 344.81530507405597,
+    "team_final_min": 72.36486053466797,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 21,
+    "penalty_events": 0,
+    "min_obstacle_dist": 25.820127487182617,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 2,
+    "final_dists": [
+     65.50682067871094,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 342.529291788737,
+    "team_final_min": 65.50682067871094,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 3,
+    "safety_violations": 16,
+    "penalty_events": 0,
+    "min_obstacle_dist": 23.52899932861328,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 3,
+    "final_dists": [
+     2.0877439975738525,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 321.3895995616913,
+    "team_final_min": 2.0877439975738525,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 8,
+    "penalty_events": 0,
+    "min_obstacle_dist": 33.67744827270508,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 4,
+    "final_dists": [
+     35.97511291503906,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 332.6853892008464,
+    "team_final_min": 35.97511291503906,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 52.40847396850586,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 5,
+    "final_dists": [
+     30.826213836669922,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 330.96908950805664,
+    "team_final_min": 30.826213836669922,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 8,
+    "penalty_events": 0,
+    "min_obstacle_dist": 33.35930252075195,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 6,
+    "final_dists": [
+     60.03749465942383,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 340.7061831156413,
+    "team_final_min": 60.03749465942383,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 18,
+    "penalty_events": 0,
+    "min_obstacle_dist": 32.109004974365234,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 7,
+    "final_dists": [
+     55.219478607177734,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 339.1001777648926,
+    "team_final_min": 55.219478607177734,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 10,
+    "penalty_events": 0,
+    "min_obstacle_dist": 39.6115837097168,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 8,
+    "final_dists": [
+     70.83285522460938,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 344.3046366373698,
+    "team_final_min": 70.83285522460938,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 4,
+    "safety_violations": 21,
+    "penalty_events": 2,
+    "min_obstacle_dist": 18.12844467163086,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 9,
+    "final_dists": [
+     55.48330307006836,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 339.18811925252277,
+    "team_final_min": 55.48330307006836,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 8,
+    "penalty_events": 0,
+    "min_obstacle_dist": 34.285152435302734,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 10,
+    "final_dists": [
+     34.95600891113281,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 332.34568786621094,
+    "team_final_min": 34.95600891113281,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 4,
+    "penalty_events": 0,
+    "min_obstacle_dist": 41.55750274658203,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 11,
+    "final_dists": [
+     15.013986587524414,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 325.6983470916748,
+    "team_final_min": 15.013986587524414,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 10,
+    "safety_violations": 16,
+    "penalty_events": 7,
+    "min_obstacle_dist": 8.405413627624512,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 12,
+    "final_dists": [
+     31.72867774963379,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 331.26991081237793,
+    "team_final_min": 31.72867774963379,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 52.523780822753906,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 13,
+    "final_dists": [
+     33.591552734375,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 331.890869140625,
+    "team_final_min": 33.591552734375,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 2,
+    "safety_violations": 21,
+    "penalty_events": 0,
+    "min_obstacle_dist": 24.6165771484375,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 14,
+    "final_dists": [
+     13.18878173828125,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 325.08994547526044,
+    "team_final_min": 13.18878173828125,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 9,
+    "penalty_events": 0,
+    "min_obstacle_dist": 29.846881866455078,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 15,
+    "final_dists": [
+     56.77898025512695,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 339.6200116475423,
+    "team_final_min": 56.77898025512695,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 22,
+    "penalty_events": 0,
+    "min_obstacle_dist": 26.34356689453125,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 16,
+    "final_dists": [
+     19.472557067871094,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 327.18453725179035,
+    "team_final_min": 19.472557067871094,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 4,
+    "penalty_events": 0,
+    "min_obstacle_dist": 40.867881774902344,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 17,
+    "final_dists": [
+     22.516551971435547,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 328.1992022196452,
+    "team_final_min": 22.516551971435547,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 51.2874755859375,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 18,
+    "final_dists": [
+     65.12496948242188,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 342.4020080566406,
+    "team_final_min": 65.12496948242188,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 55.30561065673828,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 19,
+    "final_dists": [
+     93.8126449584961,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 351.96456654866535,
+    "team_final_min": 93.8126449584961,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 10,
+    "safety_violations": 19,
+    "penalty_events": 7,
+    "min_obstacle_dist": 4.613786220550537,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 20,
+    "final_dists": [
+     6.162308216094971,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 322.7477876345317,
+    "team_final_min": 6.162308216094971,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 9,
+    "penalty_events": 0,
+    "min_obstacle_dist": 31.531108856201172,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 21,
+    "final_dists": [
+     74.21001434326172,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 345.4303563435872,
+    "team_final_min": 74.21001434326172,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 58.023780822753906,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 22,
+    "final_dists": [
+     65.9525146484375,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 342.6778564453125,
+    "team_final_min": 65.9525146484375,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 47.726566314697266,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 23,
+    "final_dists": [
+     57.091060638427734,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 339.7240384419759,
+    "team_final_min": 57.091060638427734,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 4,
+    "safety_violations": 16,
+    "penalty_events": 0,
+    "min_obstacle_dist": 21.160648345947266,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 24,
+    "final_dists": [
+     56.83626937866211,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 339.639108022054,
+    "team_final_min": 56.83626937866211,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 7,
+    "safety_violations": 5,
+    "penalty_events": 5,
+    "min_obstacle_dist": 5.132098197937012,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 25,
+    "final_dists": [
+     50.53634262084961,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 337.5391324361165,
+    "team_final_min": 50.53634262084961,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 13,
+    "penalty_events": 5,
+    "min_obstacle_dist": 10.569083213806152,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 26,
+    "final_dists": [
+     42.725502014160156,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 334.9355189005534,
+    "team_final_min": 42.725502014160156,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 45.92533493041992,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 27,
+    "final_dists": [
+     44.839813232421875,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 335.6402893066406,
+    "team_final_min": 44.839813232421875,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 6,
+    "penalty_events": 0,
+    "min_obstacle_dist": 36.53205490112305,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 28,
+    "final_dists": [
+     50.022708892822266,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 337.36792119344074,
+    "team_final_min": 50.022708892822266,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 48.04295349121094,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 29,
+    "final_dists": [
+     67.4013671875,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 343.1608072916667,
+    "team_final_min": 67.4013671875,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 54.159542083740234,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 30,
+    "final_dists": [
+     50.76988983154297,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 337.61698150634766,
+    "team_final_min": 50.76988983154297,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 55.02423858642578,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 31,
+    "final_dists": [
+     78.2155990600586,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 346.7655512491862,
+    "team_final_min": 78.2155990600586,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 2,
+    "safety_violations": 22,
+    "penalty_events": 0,
+    "min_obstacle_dist": 23.594987869262695,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 32,
+    "final_dists": [
+     59.41059494018555,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 340.49721654256183,
+    "team_final_min": 59.41059494018555,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 11,
+    "safety_violations": 12,
+    "penalty_events": 7,
+    "min_obstacle_dist": 12.824966430664062,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 33,
+    "final_dists": [
+     43.48530578613281,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 335.18878682454425,
+    "team_final_min": 43.48530578613281,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 17,
+    "penalty_events": 4,
+    "min_obstacle_dist": 13.72879409790039,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 34,
+    "final_dists": [
+     58.313846588134766,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 340.1316337585449,
+    "team_final_min": 58.313846588134766,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 6,
+    "penalty_events": 4,
+    "min_obstacle_dist": 15.096227645874023,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 35,
+    "final_dists": [
+     65.81612396240234,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 342.6323928833008,
+    "team_final_min": 65.81612396240234,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 15,
+    "penalty_events": 0,
+    "min_obstacle_dist": 28.24810791015625,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 36,
+    "final_dists": [
+     4.015979290008545,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 322.0323446591695,
+    "team_final_min": 4.015979290008545,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 12,
+    "penalty_events": 4,
+    "min_obstacle_dist": 9.400972366333008,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 37,
+    "final_dists": [
+     59.186378479003906,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 340.42247772216797,
+    "team_final_min": 59.186378479003906,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 7,
+    "safety_violations": 6,
+    "penalty_events": 5,
+    "min_obstacle_dist": 5.033931732177734,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 38,
+    "final_dists": [
+     32.4362678527832,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 331.5057741800944,
+    "team_final_min": 32.4362678527832,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 79.30335998535156,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 39,
+    "final_dists": [
+     22.547754287719727,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 328.2096029917399,
+    "team_final_min": 22.547754287719727,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 51.085994720458984,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 40,
+    "final_dists": [
+     57.8768196105957,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 339.98595809936523,
+    "team_final_min": 57.8768196105957,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 5,
+    "safety_violations": 5,
+    "penalty_events": 3,
+    "min_obstacle_dist": 14.8566312789917,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 41,
+    "final_dists": [
+     55.419620513916016,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 339.16689173380536,
+    "team_final_min": 55.419620513916016,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 56.359764099121094,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 42,
+    "final_dists": [
+     36.70732498168945,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 332.9294598897298,
+    "team_final_min": 36.70732498168945,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 6,
+    "safety_violations": 14,
+    "penalty_events": 2,
+    "min_obstacle_dist": 17.832603454589844,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 43,
+    "final_dists": [
+     57.51289367675781,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 339.8646494547526,
+    "team_final_min": 57.51289367675781,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 7,
+    "safety_violations": 4,
+    "penalty_events": 5,
+    "min_obstacle_dist": 5.48707914352417,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 44,
+    "final_dists": [
+     40.674415588378906,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 334.25182342529297,
+    "team_final_min": 40.674415588378906,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 59.1894416809082,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 45,
+    "final_dists": [
+     27.90475082397461,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 329.9952685038249,
+    "team_final_min": 27.90475082397461,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 9,
+    "penalty_events": 0,
+    "min_obstacle_dist": 26.661396026611328,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 46,
+    "final_dists": [
+     19.116487503051758,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 327.0658473968506,
+    "team_final_min": 19.116487503051758,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 7,
+    "safety_violations": 9,
+    "penalty_events": 5,
+    "min_obstacle_dist": 6.608055591583252,
+    "collision_free": 0,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 47,
+    "final_dists": [
+     13.594392776489258,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 325.2251491546631,
+    "team_final_min": 13.594392776489258,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 0,
+    "penalty_events": 0,
+    "min_obstacle_dist": 49.680213928222656,
+    "collision_free": 1,
+    "safety_compliant": 1
+   },
+   {
+    "ep": 48,
+    "final_dists": [
+     43.29683303833008,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 335.1259625752767,
+    "team_final_min": 43.29683303833008,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 11,
+    "penalty_events": 0,
+    "min_obstacle_dist": 27.383363723754883,
+    "collision_free": 1,
+    "safety_compliant": 0
+   },
+   {
+    "ep": 49,
+    "final_dists": [
+     73.11666870117188,
+     481.04052734375,
+     481.04052734375
+    ],
+    "team_final_mean": 345.06590779622394,
+    "team_final_min": 73.11666870117188,
+    "n_individual_arrived": 1,
+    "team_arrived": 0,
+    "any_arrived": 1,
+    "true_collisions": 0,
+    "safety_violations": 18,
+    "penalty_events": 0,
+    "min_obstacle_dist": 28.5020694732666,
+    "collision_free": 1,
+    "safety_compliant": 0
+   }
+  ]
+ }
+}

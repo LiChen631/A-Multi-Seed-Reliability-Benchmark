@@ -1,0 +1,116 @@
+{
+  "_meta": {
+    "source": "用户云服务器实测输出（2026-10-01）",
+    "host": "AutoDL 北京B区 / RTX 4090 / 16核 Xeon Gold 6430 / 120GB / PyTorch 2.5.1+cu124",
+    "note": "数值由服务器终端输出转录；权威文件为服务器上的 diag_5seed.txt / metrics_split.json / robustness_multi_seed.json",
+    "protocol": {
+      "degeneracy": "每个 (algo, seed) 用 np.random.seed(seed)+torch.manual_seed(seed)，跑 1 个 episode（<=200 步，确定性策略），统计 |a|>=0.999 的比例、动作四舍五入到 2 位后的唯一向量数、episode 累计回报",
+      "metrics_split": "eval_metrics_split.py --seeds 42 123 --n_episodes 50 --threshold 120；真实碰撞=中心距<r(25m)，安全违反=25<=d<45，惩罚触发=d<20；统计为每 episode 的 agent-step 累计数"
+    }
+  },
+  "degeneracy_5seed": {
+    "columns": ["sat_frac", "mean_abs_action", "single_episode_return", "unique_actions"],
+    "data": {
+      "maddpg": {
+        "42":   [0.998, 1.000, -691.7, 6],
+        "123":  [0.835, 0.979, -623.4, 84],
+        "456":  [1.000, 1.000, -2262.9, 2],
+        "789":  [1.000, 1.000, -689.3, 3],
+        "1024": [1.000, 1.000, -712.5, 3]
+      },
+      "matd3": {
+        "42":   [0.748, 0.883, -502.3, 127],
+        "123":  [0.747, 0.943, -611.0, 125],
+        "456":  [1.000, 1.000, -675.8, 3],
+        "789":  [1.000, 1.000, -2248.6, 2],
+        "1024": [1.000, 1.000, -788.4, 3]
+      },
+      "muav_mtd3": {
+        "42":   [1.000, 1.000, -814.2, 3],
+        "123":  [0.723, 0.915, -715.6, 36],
+        "456":  [1.000, 1.000, -781.9, 3],
+        "789":  [1.000, 1.000, -795.5, 3],
+        "1024": [1.000, 1.000, -2247.3, 2]
+      },
+      "muav_std3": {
+        "42":   [0.502, 0.622, -513.5, 192],
+        "123":  [0.742, 0.667, -657.1, 48],
+        "456":  [1.000, 1.000, -781.9, 3],
+        "789":  [1.000, 1.000, -860.6, 3],
+        "1024": [1.000, 1.000, -788.4, 3]
+      }
+    },
+    "actor_max_abs_diff_vs_muav_mtd3_same_seed": {
+      "42": {"maddpg": 0.667, "matd3": 1.54, "muav_mtd3": 0.0, "muav_std3": 0.621},
+      "123": {"maddpg": 0.637, "matd3": 1.63, "muav_mtd3": 0.0, "muav_std3": 0.0656},
+      "456": {"maddpg": 0.630, "matd3": 0.269, "muav_mtd3": 0.0, "muav_std3": 0.326}
+    },
+    "key_findings": [
+      "seeds 456/789/1024：四个算法全部完全饱和（sat=1.000、mean|a|=1.000、uniq=2-3）",
+      "论文所称'发散'的 run（MADDPG@456 -2262.9、MATD3@789 -2248.6、MUAV-MTD3@1024 -2247.3）恰好都是 uniq=2 的恒定动作序列",
+      "跨算法行为同一：seed456 MUAV-MTD3=MUAV-STD3=-781.9；seed1024 MATD3=MUAV-STD3=-788.4",
+      "MUAV-MTD3 在 4/5 种子上饱和退化（仅 seed123 部分正常）",
+      "仅 seeds 42/123 有可比较的策略；seed42 上 MUAV-STD3 uniq=192 为真实策略、MUAV-MTD3 uniq=3 为 bang-bang",
+      "seed456 两算法权重最大差 0.326（并非同一份权重），但都饱和到同一组极端动作 → 行为一致，解释了 Table 6 两列逐位相同"
+    ]
+  },
+  "metrics_split_seeds42_123": {
+    "threshold_m": 120,
+    "n_episodes": 50,
+    "columns": ["individual_arrival_rate", "team_arrival_rate", "true_collisions(per episode, agent-step)", "safety_violations(25<=d<45)", "penalty_events(d<20)"],
+    "data": {
+      "maddpg_seed42":   [0.333, 0.000, 10.40, 25.5, 6.7],
+      "maddpg_seed123":  [0.327, 0.000, 6.34, 14.4, 3.9],
+      "matd3_seed42":    [0.573, 0.000, 9.90, 21.2, 6.3],
+      "matd3_seed123":   [0.307, 0.000, 12.16, 30.5, 7.6],
+      "muav_mtd3_seed42":  [0.000, 0.000, 3.68, 9.3, 2.2],
+      "muav_mtd3_seed123": [0.000, 0.000, 13.08, 31.1, 7.9],
+      "muav_std3_seed42":  [0.560, 0.000, 9.04, 22.5, 5.6],
+      "muav_std3_seed123": [0.333, 0.000, 2.28, 8.4, 1.4]
+    },
+    "key_findings": [
+      "全队到达率全部为 0，但个体到达率 30%-57% → 论文需要区分个体/全队到达（审稿意见 #4）",
+      "MUAV-MTD3 个体到达率 0.000（两种子）→ 与退化表一致：恒定动作序列未在导航",
+      "策略常态性侵入障碍物本体（中心距 < 25 m）：每 episode 2.3-13.1 次 → 论文'安全避障'表述必须撤回",
+      "论文原 Collisions 列数值与本次'惩罚触发事件'量级一致 → 确认该列一直是惩罚触发次数而非碰撞"
+    ]
+  },
+  "timing_rollout_only": {
+    "note": "该测量只含 select_action + env.step，未含梯度更新（脚本里 a.update() 调用与真实 API 不符被 except 吞掉），不能与论文 §4.4 的 per-agent training step 相比",
+    "per_env_step_ms_3agents": {"maddpg": 1.2, "matd3": 1.2, "muav_mtd3": 1.2, "muav_std3": 1.1},
+    "device": "cuda"
+  },
+  "timing_clean_20261001": {
+    "protocol": "直接调用 train.update_agents()（与训练同一代码路径）；缓冲 3000 条，预热 5 次后计时 300 次；每段前后 torch.cuda.synchronize()；硬件 RTX 4090 + Xeon Gold 6430，BATCH_SIZE=128，HIDDEN_DIM=128",
+    "columns": ["rollout_ms_per_step", "update_ms_per_step_3agents", "per_agent_update_ms", "full_training_step_ms"],
+    "data": {
+      "maddpg":    [1.08, 15.72, 5.24, 16.80],
+      "matd3":     [1.08, 17.76, 5.92, 18.85],
+      "muav_mtd3": [1.08, 20.32, 6.77, 21.40],
+      "muav_std3": [0.84, 21.33, 7.11, 22.16]
+    },
+    "paper_claimed_per_agent_ms": {"maddpg": 8.2, "matd3": 9.1, "muav_mtd3": 12.4, "muav_std3": 15.7},
+    "ratio_paper_over_measured": {"maddpg": 1.56, "matd3": 1.54, "muav_mtd3": 1.83, "muav_std3": 2.21},
+    "findings": [
+      "四种算法的排序与论文完全一致（MADDPG < MATD3 < MUAV-MTD3 < MUAV-STD3）",
+      "绝对值比论文低 1.5-2.2 倍（不同硬件：本机 4090+Xeon vs 原稿笔记本）",
+      "更新占完整训练步约 95%（rollout 仅约 1 ms）→ 该实现是'更新受限'，GPU 提速有限"
+    ]
+  },
+  "qbias_seeds42_123_20261001": {
+    "protocol": "eval_qbias_fixed.py（已打补丁导出绝对误差与逐样本）--seeds 42 123 --n_episodes 10 --n_samples 500",
+    "signed_mean": {
+      "maddpg": {"42": 6.87, "123": 6.28, "mean_2seed": 6.58},
+      "matd3": {"42": 8.78, "123": 18.81, "mean_2seed": 13.80},
+      "muav_mtd3": {"42": 7.72, "123": 10.11, "mean_2seed": 8.92},
+      "muav_std3": {"42": -0.29, "123": 6.26, "mean_2seed": 2.98}
+    },
+    "paper_table3_3seeds": {"maddpg": "5.71 ± 1.52", "matd3": "18.67 ± 9.82", "muav_mtd3": "9.32 ± 1.38", "muav_std3": "2.53 ± 3.37"},
+    "findings": [
+      "排序与论文一致：MATD3 偏差最高、MUAV-STD3 最低 → 偏差-性能解离的主论断在非退化种子上依然成立",
+      "与论文数值的差异可归因于论文 Table 3 含退化种子 456",
+      "绝对误差（abs_mean/abs_p50/abs_p90）与逐样本已随 JSON 导出 → 审稿意见 #1 闭环"
+    ],
+    "absolute_error_note": "abs_* 与 td_target_discrepancy_samples 字段在服务器 qbias_fixed_results.json 中，待下载后回填论文"
+  }
+}

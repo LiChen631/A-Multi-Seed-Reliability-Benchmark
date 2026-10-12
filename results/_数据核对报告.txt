@@ -1,0 +1,55 @@
+=== robustness_multi_seed.json ===
+meta: {'seeds': [42, 123, 456], 'n_episodes': 30, 'semantics': 'observation perturbation (delay/loss/noise on actor obs)'}
+  maddpg     seeds=['seed1024', 'seed123', 'seed42', 'seed456', 'seed789']  conditions=12
+  matd3      seeds=['seed1024', 'seed123', 'seed42', 'seed456', 'seed789']  conditions=12
+  muav_mtd3  seeds=['seed1024', 'seed123', 'seed42', 'seed456', 'seed789']  conditions=12
+  muav_std3  seeds=['seed1024', 'seed123', 'seed42', 'seed456', 'seed789']  conditions=12
+  conditions: ['delay0', 'delay100', 'delay200', 'delay50', 'loss0.0', 'loss0.1', 'loss0.2', 'loss0.3', 'noise0.0', 'noise0.01', 'noise0.05', 'noise0.1']
+
+=== 单条件聚合（跨种子均值）===
+condition        maddpg      matd3  muav_mtd3  muav_std3
+delay0          -1006.8     -948.4    -1077.5     -739.9
+delay100        -1005.3     -944.8    -1078.9     -748.4
+delay200        -1003.9     -953.6    -1079.9     -740.8
+delay50         -1004.9     -945.3    -1077.6     -741.9
+loss0.0         -1003.5     -943.2    -1077.7     -740.8
+loss0.1         -1003.3     -950.9    -1078.7     -745.1
+loss0.2         -1003.5     -953.7    -1079.0     -749.8
+loss0.3         -1004.7     -962.6    -1083.1     -755.2
+noise0.0        -1002.0     -943.9    -1077.3     -743.8
+noise0.01       -1005.6     -945.7    -1074.4     -735.7
+noise0.05       -1003.5     -945.7    -1078.5     -739.4
+noise0.1        -1005.5     -938.1    -1076.4     -738.3
+
+=== per-seed 均值（每行一个算法，列=5 个种子平均）===
+  maddpg       -721.9    -621.3    -729.4   -2249.5    -699.8
+  matd3        -797.8    -527.3    -474.1    -681.4   -2259.4
+  muav_mtd3   -2249.5    -750.3    -803.4    -784.6    -803.4
+  muav_std3    -797.8    -697.3    -568.1    -784.6    -868.5
+
+=== 与 before_rerun 对比：muav_std3.seed456 是否逐位相同（验证评估确定性）===
+  12/12 个条件逐位相同 -> 评估是确定性的（同一 checkpoint 结果可复现）
+
+=== metrics_split.json ===
+meta: {'r_obstacle': 25.0, 'margin': 20.0, 'd_pen': 20.0, 'semantics': 'separated collision / safety-violation / penalty-trigger statistics', 'seeds': [42, 123], 'n_episodes': 50, 'threshold_m': 120.0}
+run                      indiv    team indiv*3 truecoll   safety     pen
+maddpg_seed123           0.327   0.000    0.98     6.34     14.4     3.9
+maddpg_seed42            0.333   0.000    1.00    10.40     25.5     6.7
+matd3_seed123            0.307   0.000    0.92    12.16     30.5     7.6
+matd3_seed42             0.573   0.000    1.72     9.90     21.2     6.3
+muav_mtd3_seed123        0.000   0.000    0.00    13.08     31.1     7.9
+muav_mtd3_seed42         0.000   0.000    0.00     3.68      9.3     2.2
+muav_std3_seed123        0.333   0.000    1.00     2.28      8.4     1.4
+muav_std3_seed42         0.560   0.000    1.68     9.04     22.5     5.6
+
+=== qbias_fixed_results.json（已含绝对误差）===
+meta: {'seeds': [42, 123], 'n_episodes': 10, 'n_samples': 500, 'metric': 'TD-target discrepancy (Q_est - y_target), per-agent reward, per-algorithm own target'}
+algo         seed     signed   abs_mean    abs_p50    abs_p90          n
+maddpg        123       6.28       9.02       9.09      10.04       1800
+maddpg         42       6.87       7.66       8.99      10.65       1800
+matd3         123      18.81      20.46      16.09      53.06       1800
+matd3          42       8.78       9.58       2.74      27.47       1800
+muav_mtd3     123      10.11      14.03       9.42      27.30       1800
+muav_mtd3      42       7.72       9.67       7.26      14.97       1800
+muav_std3     123       6.26       7.21       8.65      10.10       1800
+muav_std3      42      -0.29      11.41       8.53      41.71       1800
